@@ -2,6 +2,8 @@
 
 #### Desafios do #boraCodar na comunidade Rocketseat
 
+_Estou começando a participar dos desafios a partir do 06 (cartão de embarque). Logo mais eu faço os anteriores e posto aqui também!_
+
 [Paticipe dos desafios](https://boracodar.dev/)
 
 | #    | Name           | Code    | Deploy |
