@@ -8,7 +8,7 @@ _Estou começando a participar dos desafios a partir do 06 (cartão de embarque)
 
 | #    |    Nome        | Código  | Site   |
 | :--- | :------------- | :------ | :------|
-| `06` | `Cartão de embarque` |  [✍](https://github.com/eduardonobrega/bora-codar/tree/main/music-player) |[💻](https://brenobotelho.github.io/boracodar/desafio6/) |
+| `06` | `Cartão de embarque` |  [✍](https://github.com/brenobotelho/boracodar/tree/main/desafio6) |[💻](https://brenobotelho.github.io/boracodar/desafio6/) |
 
 
 
