@@ -12,9 +12,9 @@ _Estou começando a participar dos desafios a partir do 06 (cartão de embarque)
 
 
 
-## Autor
+# Autor
 
-_Me siga nas redes sociais!_
+👾 _Me siga nas redes sociais!_
 
 Github: [@brenobotelho](https://github.com/brenobotelho)
 
