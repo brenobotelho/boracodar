@@ -14,4 +14,12 @@ _Estou começando a participar dos desafios a partir do 06 (cartão de embarque)
 
 ## Autor
 
-[@brenobotelho](https://github.com/brenobotelho)
+_Me siga nas redes sociais!_
+
+Github: [@brenobotelho](https://github.com/brenobotelho)
+
+Instagram:
+
+Facebook:
+
+Linkedin:
