@@ -6,7 +6,7 @@ _Estou começando a participar dos desafios a partir do 06 (cartão de embarque)
 
 [Paticipe dos desafios](https://boracodar.dev/)
 
-| #    |    Nome        | Código  | Site   |
+|   #  |    Nome        | Código  | Site   |
 | :--- | :------------- | :------ | :------|
 | `06` | `Cartão de embarque` |  [✍](https://github.com/brenobotelho/boracodar/tree/main/desafio6) |[💻](https://brenobotelho.github.io/boracodar/desafio6/) |
 
