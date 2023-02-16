@@ -14,4 +14,4 @@ _Estou começando a participar dos desafios a partir do 06 (cartão de embarque)
 
 ## Autor
 
-[@brenobotelho]([https://www.linkedin.com/in/eduardo-nunes-nobrega/](https://github.com/brenobotelho))
+[@brenobotelho](https://github.com/brenobotelho)
