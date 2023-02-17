@@ -9,7 +9,7 @@ _Estou começando a participar dos desafios a partir do 06 (cartão de embarque)
 |   #  |    Nome        | Código  | Site   |
 | :--- | :------------- | :------ | :------|
 | `06` | `Cartão de embarque` |  [✍](https://github.com/brenobotelho/boracodar/tree/main/desafio6) |[💻](https://brenobotelho.github.io/boracodar/desafio6/) |
-| `07` | `Encontre um bloco de carnaval` |  [✍](https://github.com/brenobotelho/boracodar/tree/main/desafio6) |[💻](https://brenobotelho.github.io/boracodar/desafio6/) |
+| `07` | `Encontre os melhores blocos de carnaval` |  [✍](https://github.com/brenobotelho/boracodar/tree/main/desafio6) |[💻](https://brenobotelho.github.io/boracodar/desafio7/) |
 
 
 
