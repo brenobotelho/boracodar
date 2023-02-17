@@ -1,0 +1,212 @@
+/* 	FEITO COM <3 POR BRENO BOTELHO 
+
+	github.com/brenobotelho
+	instragram.com/@brenobotelho_
+
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	transition: all 0.5 ease; 
+}
+
+body {
+	background: #ffffff;
+}
+
+.content {
+	background-color: #F8F8FF;
+	width: 100vw;
+	height: 532px;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 40px; 
+}
+.content-top {
+	
+	/* background-color: blue; */
+	
+	position: absolute;
+	width: 993px;
+	height: 332px;
+
+
+}
+
+.ilustra-01 {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.ilustra-02 {
+	position: absolute;
+	bottom: -4px;
+  	right: 0;
+
+}
+
+.text-infos {
+	text-align: center;
+}
+
+.text-search-block-en {
+	font-weight: 500;
+	font-size: 16px;
+	letter-spacing: 1.6px;
+	color: #E45858;	
+	text-transform: uppercase;
+}
+
+.text-search-block-br {
+	display: inline-block;
+	width: 647px;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 60px;
+	margin-top: 18px;	
+}
+
+.text-search-block-br span {
+	color: #6246EA;
+}
+
+.search-infos {
+	background-color: #FFFFFF;
+	width: 993px;
+	height: 128px;
+	border-radius: 10px;
+	border: 1px solid #EAEAEA;
+	margin-top: 40px;
+	padding: 40px;
+	
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.search-name, 
+.search-city {
+	background-color: #F4F4FF; 
+	width: 348px;
+	height: 48px;	
+	display: flex;
+	align-items: center;
+	border-radius: 5px;
+	
+}
+
+.search-infos i{
+	color:#e45858;
+	font-size: 24px;
+	font-weight: 300;
+	margin: 12px 12px 12px 14px;
+}
+
+.search-button button{
+	background-color: #6246EA;
+	color: #ffffff;
+	width: 169px;
+	height: 48px;
+	border-radius: 5px;
+	border: none;
+
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.search-button button:hover{
+	background-color: #3b1dcb;
+}
+
+input.nome_bloco,  
+input.nome_cidade {
+	color: #7C7C8A;
+	font-size: 16px;
+	background: #ffffff00;
+	border: none;
+}
+
+input.nome_bloco {
+	width: 290px;
+}
+
+input.nome_cidade {
+	width: 254px;
+}
+
+.search-city i.bx-chevron-down {
+	color: #858793;
+	font-size: 30px;	
+}
+
+input:focus {
+	outline: 0;
+}
+
+.content-blocks {
+	margin: 100px 112px;
+	
+}
+
+.txt-blocks {
+	display: flex;
+	justify-content: space-between;	
+	height: 48px;
+	
+}
+
+.txt-left {
+	font-size: 32px;
+	font-weight: 700;
+	display: flex;
+    	align-items: center;
+}
+
+
+.txt-right-navbar {
+	display: flex;
+	align-items: center;
+	border: 1px solid #EAEAEA;
+	border-radius: 6px;
+}
+
+.navbar-right {
+	padding: 8px;
+	border-radius: 6px;
+	
+}
+
+.txt-right-navbar a {
+	font-weight: 700;
+	font-size: 14px;
+	border-radius: 6px;
+	color: white;
+	padding: 8px 24px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.txt-right-navbar .list {
+	background: #6246EA;
+}
+
+.txt-right-navbar .mapa {
+	color: #6246EA;
+}
+
+
+
+
+
+
+
+
