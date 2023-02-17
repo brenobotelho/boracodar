@@ -1,10 +1,18 @@
-# Desafios #boraCodar
+# Desafios #boraCodar 2023 | 👾
 
-#### Desafios do #boraCodar na comunidade Rocketseat
+📌 **Desafios do [#boraCodar](https://www.rocketseat.com.br/boracodar) na comunidade [Rocketseat](https://www.rocketseat.com.br). Entre, confira e participe!**
 
-_Estou começando a participar dos desafios a partir do 06 (cartão de embarque). Logo mais eu faço os anteriores e posto aqui também!_
+<br>
 
-[Paticipe dos desafios](https://boracodar.dev/)
+🖊 _Estou começando a participar dos desafios a partir do 06 (cartão de embarque). Logo mais eu faço os anteriores e posto aqui também!_
+
+<br>
+
+🎯 [Paticipe dos desafios](https://boracodar.dev/)!
+
+
+
+# 💎 Confira minhas particiações logo abaixo 
 
 |   #  |    Nome        | Código  | Site   |
 | :--- | :------------- | :------ | :------|
