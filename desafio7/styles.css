@@ -10,34 +10,26 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
-	transition: all 0.5 ease; 
 }
 
 body {
 	background: #ffffff;
+	min-height: 100vh;
 }
 
 .content {
 	background-color: #F8F8FF;
-	width: 100vw;
 	height: 532px;
 	position: relative;
-
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	gap: 40px; 
+	justify-content: center; 
 }
 .content-top {
-	
-	/* background-color: blue; */
-	
 	position: absolute;
 	width: 993px;
 	height: 332px;
-
-
 }
 
 .ilustra-01 {
@@ -50,7 +42,6 @@ body {
 	position: absolute;
 	bottom: -4px;
   	right: 0;
-
 }
 
 .text-infos {
@@ -89,7 +80,6 @@ body {
 	
 	display: flex;
 	justify-content: space-between;
-	
 }
 
 .search-name, 
@@ -100,7 +90,6 @@ body {
 	display: flex;
 	align-items: center;
 	border-radius: 5px;
-	
 }
 
 .search-infos i{
@@ -153,15 +142,21 @@ input:focus {
 }
 
 .content-blocks {
-	margin: 100px 112px;
-	
+	display: flex;
+	justify-content: center;
+}
+
+.blocks-divs {
+	position: relative;
+	margin: 100px 0;
+	width: 1216px;
+	height: 1121px;
 }
 
 .txt-blocks {
 	display: flex;
 	justify-content: space-between;	
 	height: 48px;
-	
 }
 
 .txt-left {
@@ -202,6 +197,52 @@ input:focus {
 .txt-right-navbar .mapa {
 	color: #6246EA;
 }
+
+.blocks-cards {
+	margin-top: 40px;
+	width: 100%;
+}
+
+.items {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px;
+}
+
+.blocks	{
+	border-radius: 10px;
+	background: #FFFFFF;
+	border: 1px solid #EAEAEA;
+	overflow: hidden;
+}
+
+.blocks h2 {
+	font-weight: 700;
+	font-size: 20px;
+	margin: 16px 0 16px 16px;
+}
+
+.blocks p {
+	font-weight: 400;
+	font-size: 16px;
+	margin: 16px 0 16px 16px;
+	color: #000000BF;
+	line-height: 160%;
+}
+
+.block-city {
+	font-size: 16px;
+	margin: 16px 0 16px 16px;
+	color: #000000BF;
+}
+
+.block-city i {
+	color: #E45858;
+	font-size: 20px;
+	margin-right: 6px;
+}
+
+
 
 
 
