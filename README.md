@@ -2,6 +2,8 @@
 
 📌 **Desafios do [#boraCodar](https://www.rocketseat.com.br/boracodar) na comunidade [Rocketseat](https://www.rocketseat.com.br). Entre, confira e participe!**
 
+
+Acompanhe as postagens dos desafios no meu [Linkedin](https://br.linkedin.com/in/breno-botelho?trk=public_profile_browsemap) e vamos trocar uma idéia!  
 <br>
 
 🖊 _Estou começando a participar dos desafios a partir do 06 (cartão de embarque). Logo mais eu faço os anteriores e posto aqui também!_
