@@ -14,7 +14,7 @@ Acompanhe as postagens dos desafios no meu [Linkedin](https://br.linkedin.com/in
 
 
 
-# 💎 Confira minhas particiações logo abaixo 
+# 💎 Confira minhas participações logo abaixo 
 
 |   #  |    Nome        | Code  | Deploy   |
 | :--- | :------------- | :------ | :------|
