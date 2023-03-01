@@ -31,4 +31,4 @@ Instagram: [@brenobotelho_](https://instagram.com/@brenobotelho_)
 
 Facebook: [Breno Botelho](https://facebook.com/BrenooBotelho)
 
-Linkedin: [Breno B.](https://linkedin.com/in/brenobotelho)
+Linkedin: [Breno B.](https://br.linkedin.com/in/breno-botelho?trk=public_profile_browsemap)
