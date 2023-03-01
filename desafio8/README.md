@@ -6,5 +6,5 @@
 
 📝 Para criar este site, utilizei as linguagens de HTML para estrutura do site, CSS para estilização do site e responsividade do mesmo. 
 
-💻 ![..](./desafio8-print.png)
+💻 ![..](./desafio8/print-site-print.png)
 
