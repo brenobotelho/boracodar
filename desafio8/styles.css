@@ -1,0 +1,201 @@
+/* 	FEITO COM <3 POR BRENO BOTELHO 
+
+	github.com/brenobotelho
+	instragram.com/@brenobotelho_
+
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+:root {
+	--background-color: #292738;
+	--background-frame: #363447;
+	--color-great: #81FBB8;
+	--color-down: linear-gradient(180deg, #EA5455 0%, #FEB692 100%);
+	--color-icon: linear-gradient(180deg, #81FBB8 0%, #28C76F 100%);
+	--eclipse-r: linear-gradient(121.94deg, #CE9FFC 15.98%, #7367F0 82.85%);
+
+	
+	font-size: 62.5%;
+	font-family: 'Inter', sans-serif;
+}
+
+body {
+	background: var(--background-color);
+	color: #fff;
+	min-height: 100vh;
+}
+
+main {
+	margin: auto;
+	min-width: 114rem;
+}
+
+.boxes {
+	margin-top: 11.2rem;
+	display: flex;
+	justify-content: center;
+		
+	height: 37.9rem;
+	text-align: center;
+}
+
+.content-frame {
+	background: var(--background-frame);
+	border-radius: 1.6rem;
+	padding: 2.9rem 4.8rem;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+}
+
+.frame-nps, 
+.frame-vendas, 
+.frame-meta {
+	display: grid;
+}
+
+.content-frame h2 {
+	font-size: 2.4rem;
+	font-weight: 600;
+	line-height: 3.84rem;
+}
+
+.content-center i {
+	font-size: 5.4rem;
+	background-image: var(--color-icon);
+  	background-clip: text;
+  	-webkit-background-clip: text;
+  	color: transparent;
+}
+
+.content-center p {
+	font-size: 2.4rem;
+	font-weight: 600;
+	line-height: 3.84rem;
+	margin-top: 1.6rem;
+	color: var(--color-great);
+}
+
+.content-center img {
+	width: 19.5rem;
+}
+
+.content-bottom {
+	font-size: 1.4rem;
+	font-weight: 400;
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+}
+
+.content-bottom span {
+	margin-left: 1rem;
+}
+
+.content-bottom .span-left {
+	margin-right: 2rem;
+}
+
+.eclipse-l, 
+.eclipse-r {
+	display: flex;
+}
+
+.eclipse-l::before {
+	content: '';
+	width: 15px;
+	height: 15px;
+	border-radius: 999px;
+	background: #4A4556;
+	margin-right: 0.4rem;
+}
+
+.eclipse-r::before {
+	content: '';
+	width: 15px;
+	height: 15px;
+	border-radius: 999px;
+	background: var(--eclipse-r);
+	margin-right: 0.4rem;
+}
+
+
+.frame-nps {
+	width: 29.6rem;
+}
+
+.frame-vendas {
+	margin: 0 3.2rem;
+}
+
+.frame-meta {
+	width: 40.9rem;
+}
+
+/* Box bottom - Marketingplace */
+
+.m-place {
+	margin: auto;
+
+	margin-top: 5.9rem;
+	border-radius: 1.6rem;
+	background: var(--background-frame);
+	width: 113rem;
+}
+
+.m-place .content {
+	display: block;
+	padding: 29px 48px;
+}
+
+.m-place .content h1 {
+	display: inline-block;
+	font-weight: 600;
+	margin-bottom: 3.2rem;
+	line-height: 3.84rem;
+}
+
+.m-place .content h3 {
+	font-weight: 500;
+	margin-bottom: 0.8rem;
+}
+
+.infos-place-l .up i{
+	background-image: var(--color-icon);
+  	background-clip: text;
+  	-webkit-background-clip: text;
+  	color: transparent;
+}
+
+.infos-place-l .down i{
+	background-image: var(--color-down);
+  	background-clip: text;
+  	-webkit-background-clip: text;
+  	color: transparent;
+}
+
+.content-infos {
+	display: flex;
+	justify-content: space-between;
+}
+
+.infos-place-chart img {
+	width: 52.3rem;
+}
+
+footer {
+	background: var(--background-frame);
+	text-align: center;
+	font-size: 2rem;
+	margin-top: 10rem;
+	height: 8rem;
+	padding: 5rem;
+}
