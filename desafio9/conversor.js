@@ -82,7 +82,6 @@ function converter() {
 
   if (selecionado == "EUR" && !isNaN(numeroDigitado) && !isNaN(euro)) {
 	calcular(euro, "EUR")
-	toggleImg(".eur");
   }
 
   if (selecionado == "USD" && !isNaN(numeroDigitado) && !isNaN(dolar)) {
@@ -148,20 +147,54 @@ function converter() {
 
 }
 
+/* troca do ícone do país ao selecionar */
+
+$("#moedas").click(function(){ 
+        var opcao = $('#moedas :checked').val()
+        if( opcao == 'USD' ){
+            document.querySelector("img").src="./images/eua.png";
+        }
+        if( opcao == 'EUR' ){
+            document.querySelector("img").src="./images/eur.png";
+        }
+
+	if( opcao == 'GBP' ){
+            document.querySelector("img").src="./images/ing.png";
+        }
+
+	if( opcao == 'CHF' ){
+            document.querySelector("img").src="./images/sui.png";
+        }
+            
+});
 
 
-function toggleImg() {
-        
-	let i = true;
-        let usd = document.getElementById("img").src = "./images/eua.png";
-	let brl = document.getElementById("img").src = "./images/br.png";
-	let eur = document.getElementById("img").src = "./images/eur.png";
 
-        if(usd = i) {
-           console.log("USD")
+var xValues = ["1D", "5D", "1M", "1A", "5A", "Máx"];
+var values = [5.17, 5.25, 5.14, 5.10, 5.30, 5.00];
 
-        } else if (eur = i){
-           console.log("eur")
-       }
-	}
+var ctx = document.getElementById('myChart').getContext("2d");
+var gradientStroke = ctx.createLinearGradient(0, 25, 0, 300);
+gradientStroke.addColorStop(1, 'white');
+gradientStroke.addColorStop(0, 'rgba(124, 58, 237, 0.5)');
 
+var myChart = new Chart(ctx, {
+  type: "line",
+  data: {
+    labels: xValues,
+    datasets: [{
+	label: false,
+      fill: true,
+      lineTension: 0,
+      backgroundColor: gradientStroke,
+      borderColor: "#7C3AED",
+      data: values
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      yAxes: [{ticks: {min: 0, max:6}}],
+    }
+  }
+});

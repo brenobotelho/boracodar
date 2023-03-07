@@ -123,30 +123,8 @@ select
 	width: 7rem;
 }
 
-/* icons country */
-
-#img {
-	width: 2.4rem;
-	height: 2.4rem;
-}
-
-.usd {
-	background-image: url("./images/eua.png");
-}
-
-.brl {
-	background-image: url("./images/br.png");
-}
-
-.eur {
-	background-image: url("./images/eur.png");
-}
-
-.gbp {
-	background-image: url("./images/gbp.png");
-}
-
-.chf {
-	background-image: url("./images/chf.png");
+.infos-graphic {
+	margin-top: 6.4rem;
+	
 }
 
