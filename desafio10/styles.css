@@ -1,0 +1,71 @@
+/* 	FEITO COM <3 POR BRENO BOTELHO 
+
+	github.com/brenobotelho
+	instragram.com/@brenobotelho_
+
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+	
+}
+
+:root {
+	--background-color: #F8FAFC;
+	--background-box: #FFFFFF;
+	--box-shadow-color: 0px 4px 32px rgba(15, 23, 42, 0.15);
+	--highlight: #7C3AED;
+	
+	font-size: 62.5%;
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	font-size: 1.6rem;
+	background: url("./images/background.png") no-repeat;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+
+	
+	
+}
+
+.grid {
+	display: grid;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+
+#app {
+	grid-template-areas:
+    	'header header header header header header'
+    	'menu main main main right right'
+    	'menu footer footer footer footer footer';
+  	gap: 10px;
+  	
+
+	min-height: 100vh;
+	height: fit-content;
+
+	place-content: center;
+	place-items: center;
+}
+
+.box {
+	
+	background: #6D67D0;
+	border-radius: 1rem;
+}
+
+
+
