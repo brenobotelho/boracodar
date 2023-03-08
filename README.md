@@ -1,6 +1,7 @@
 # Desafios #boraCodar 2023 | 👾
 
-📌 **Desafios do [#boraCodar](https://www.rocketseat.com.br/boracodar) na comunidade [Rocketseat](https://www.rocketseat.com.br). Entre, confira e participe!**
+📌 **Desafios semanais do [#boraCodar](https://www.rocketseat.com.br/boracodar) proposto pela comunidade [Rocketseat](https://www.rocketseat.com.br). 
+Tenho buscado me desafiar cada vez mais e desenvolver o meu aprendizado explorando novas tecnologias e idéias. Entre, confira e participe!**
 
 
 Acompanhe as postagens dos desafios no meu [Linkedin](https://br.linkedin.com/in/breno-botelho?trk=public_profile_browsemap) e vamos trocar uma idéia!  
@@ -25,14 +26,13 @@ Acompanhe as postagens dos desafios no meu [Linkedin](https://br.linkedin.com/in
 
 
 
-# Autor
+# 👤 Autor
+
+**Breno Botelho**
 
 👾 _Me siga nas redes sociais!_
 
-Github: [@brenobotelho](https://github.com/brenobotelho)
-
-Instagram: [@brenobotelho_](https://instagram.com/@brenobotelho_)
-
-Facebook: [Breno Botelho](https://facebook.com/BrenooBotelho)
-
-Linkedin: [Breno B.](https://br.linkedin.com/in/breno-botelho?trk=public_profile_browsemap)
+- Github: [@brenobotelho](https://github.com/brenobotelho)
+- Instagram: [@brenobotelho_](https://instagram.com/@brenobotelho_)
+- Facebook: [Breno Botelho](https://facebook.com/BrenooBotelho)
+- Linkedin: [Breno B.](https://br.linkedin.com/in/breno-botelho?trk=public_profile_browsemap)
