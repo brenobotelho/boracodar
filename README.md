@@ -5,14 +5,11 @@ Tenho buscado me desafiar cada vez mais e desenvolver o meu aprendizado exploran
 
 
 Acompanhe as postagens dos desafios no meu [Linkedin](https://br.linkedin.com/in/breno-botelho?trk=public_profile_browsemap) e vamos trocar uma idéia!  
-<br>
 
 🖊 _Estou começando a participar dos desafios a partir do 06 (cartão de embarque). Logo mais eu faço os anteriores e posto aqui também!_
 
-<br>
 
-🎯 [Paticipe dos desafios](https://boracodar.dev/)!
-
+🎯 [Paticipe você também dos desafios!](https://boracodar.dev/)!
 
 
 # 💎 Confira minhas participações logo abaixo 
