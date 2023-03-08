@@ -1,6 +1,6 @@
 # #BORACODAR 👾
 
-🛠 **Conversor de moeda** _"#boracodar um Conversor de Moedas"_
+🛠 **Conversor de moeda:** _"#boracodar um Conversor de Moedas"_
 
 📌 Esse é o meu nono desafio #boraCodar, proposto pela Rocketseat.
 
