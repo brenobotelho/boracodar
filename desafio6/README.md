@@ -23,6 +23,9 @@ Este Cartão de Embarque tem como objetivo mostrar o check-in com informações 
 Projeto construído a partir do layout proposto no desafio [#BoraCodar9](https://boracodar.dev/) realizado pela [Rocketseat](https://rocketseat.com.br). <br>
 Utilizei o HTML para marcação do site, CSS para estilização e o Figma como base do projeto.
 
+## 📑 Deploy
+
+Acesse o site [clicando aqui](https://brenobotelho.github.io/boracodar/desafio6/).
 
 # 👤 Autor
 
