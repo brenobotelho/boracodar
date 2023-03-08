@@ -1,8 +1,11 @@
-/* 
-https://github.com/RubenFilipe07/Conversor-de-moedas/blob/master/index.html 
-*/
-
 "use strict"
+
+let horaAgr = new Date().toLocaleTimeString();
+let dataHj = new Date().toLocaleDateString();
+
+document.querySelector("#atualizacao").innerHTML = `${dataHj}, ${horaAgr}`
+
+/* API DE CONVERSÃO DE MOEDAS */
 
 let resultado;
 
@@ -19,34 +22,35 @@ $.ajax({
 });
 
 document.querySelector(".button-convert").addEventListener("click", converter)
+
 function converter() {
-	let euro = resultado["EUR"]["bid"]
-	let dolar = resultado["USD"]["bid"]
-	let dolarTurismo = resultado["USDT"]["bid"]
-	let dolarCanadense = resultado["CAD"]["bid"]
-	let dolarAustraliano = resultado["AUD"]["bid"]
-	let libra = resultado["GBP"]["bid"]
-	let peso = resultado["ARS"]["bid"]
-	let iene = resultado["JPY"]["bid"]
-	let yuan = resultado["CNY"]["bid"]
-	let franco = resultado["CHF"]["bid"]
-	let shekel = resultado["ILS"]["bid"]
-	let btcoin = resultado["BTC"]["bid"]
-	let ethereum = resultado["ETH"]["bid"]
-	let ltcoin = resultado["LTC"]["bid"]
-	let dogecoin = resultado["DOGE"]["bid"]
-	let xrp = resultado["XRP"]["bid"]
+      let euro = resultado["EUR"]["bid"]
+      let dolar = resultado["USD"]["bid"]
+      let dolarTurismo = resultado["USDT"]["bid"]
+      let dolarCanadense = resultado["CAD"]["bid"]
+      let dolarAustraliano = resultado["AUD"]["bid"]
+      let libra = resultado["GBP"]["bid"]
+      let peso = resultado["ARS"]["bid"]
+      let iene = resultado["JPY"]["bid"]
+      let yuan = resultado["CNY"]["bid"]
+      let franco = resultado["CHF"]["bid"]
+      let shekel = resultado["ILS"]["bid"]
+      let btcoin = resultado["BTC"]["bid"]
+      let ethereum = resultado["ETH"]["bid"]
+      let ltcoin = resultado["LTC"]["bid"]
+      let dogecoin = resultado["DOGE"]["bid"]
+      let xrp = resultado["XRP"]["bid"]
 
   function getHorarioAtualizacao(codigoMoeda) {
-	let data = (resultado[codigoMoeda]["create_date"])
-    //Mudando a formatação da data para DD/MM/AA 
-	let dia = data.substring(8, 10)
-	let mes = data.substring(5, 7)
-	let ano = data.substring(0, 4)
-	let hora = data.substring(11, 16)
-	let dataFormatada = `${dia}/${mes}/${ano} às ${hora}`
-	let atualizacao = document.querySelector("#atualizacao");
-    atualizacao.innerHTML = 'Cotação atualizada em ' + dataFormatada;
+      let data = (resultado[codigoMoeda]["create_date"])
+        //Mudando a formatação da data para DD/MM/AA 
+      let dia = data.substring(8, 10)
+      let mes = data.substring(5, 7)
+      let ano = data.substring(0, 4)
+      let hora = data.substring(11, 16)
+      let dataFormatada = `${dia}/${mes}/${ano} às ${hora}`
+      let atualizacao = document.querySelector("#atualizacao");
+        atualizacao.innerHTML = 'Cotação atualizada em ' + dataFormatada;
   }
 
 	let numeroDigitado = document.querySelector("#entrada").value;
@@ -81,7 +85,7 @@ function converter() {
   }
 
   if (selecionado == "EUR" && !isNaN(numeroDigitado) && !isNaN(euro)) {
-	calcular(euro, "EUR")
+	  calcular(euro, "EUR")
   }
 
   if (selecionado == "USD" && !isNaN(numeroDigitado) && !isNaN(dolar)) {
@@ -150,7 +154,7 @@ function converter() {
 /* troca do ícone do país ao selecionar */
 
 $("#moedas").click(function(){ 
-        var opcao = $('#moedas :checked').val()
+    var opcao = $('#moedas :checked').val();
         if( opcao == 'USD' ){
             document.querySelector("img").src="./images/eua.png";
         }
@@ -169,9 +173,10 @@ $("#moedas").click(function(){
 });
 
 
+/* Gráfico */
 
 var xValues = ["1D", "5D", "1M", "1A", "5A", "Máx"];
-var values = [5.17, 5.25, 5.14, 5.10, 5.30, 5.00];
+var values = [5.16, 5.19, 5.10, 5.15, 5.30, 5.10];
 
 var ctx = document.getElementById('myChart').getContext("2d");
 var gradientStroke = ctx.createLinearGradient(0, 25, 0, 300);
@@ -194,7 +199,7 @@ var myChart = new Chart(ctx, {
   options: {
     legend: {display: false},
     scales: {
-      yAxes: [{ticks: {min: 0, max:6}}],
+      yAxes: [{ticks: {min: 5.1, max:5.3}}],
     }
   }
 });

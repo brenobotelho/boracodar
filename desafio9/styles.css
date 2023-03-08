@@ -74,6 +74,7 @@ main {
 .input-convert input {
 	border: none;
 	font-size: 1.6rem;
+	background: var(--background-box);
 }
 
 .input-convert input:focus,
@@ -125,6 +126,13 @@ select
 
 .infos-graphic {
 	margin-top: 6.4rem;
-	
 }
 
+.atualizacao {
+	margin-top: 2rem;
+}
+
+footer {
+	position: absolute;
+	top: 100%;
+}
