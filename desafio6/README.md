@@ -1,4 +1,4 @@
-<h1 align="center"> #BoraCodar | Desafio 6 | Cartão de Embarque </h1>
+<h1 align="center"> 👾 #BoraCodar | Desafio 6 | Cartão de Embarque 👾 </h1>
 
 <p align="center">
     <i> "Desenvolva uma tela onde um usuário visualiza um cartão de embarque. Use sua criatividade e fique à vontade para ir além nesse projeto." </i> 
