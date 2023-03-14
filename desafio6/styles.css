@@ -12,9 +12,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	height: 100vh;
-	width: 100vw;
+	
+	
 }
 
 .txt-card{
@@ -22,6 +21,7 @@ body {
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 23px;
+	margin-top: 20px;
 }
 
 
@@ -226,48 +226,6 @@ body {
 
 
 
-.eclipse1 {
-	position: absolute;
-	background: #583b9c;
-	width: 24px;
-	height: 24px;
-	border-radius: 24px;
-	left: calc(50% - 24px/2 - 163.5px);
-	top: calc(50% - 24px/2 - 11px);
-}
-
-
-
-.eclipse2 {
-	position: absolute;
-	background: #6040a9;
-	width: 24px;
-	height: 24px;
-	border-radius: 24px;
-	left: calc(50% - 24px/2 - 163.5px);
-	top: calc(50% - 24px/2 - 93px);
-}
-
-.eclipse3 {
-	
-	position: absolute;
-	background: #5a3c9e;
-	width: 24px;
-	height: 24px;
-	border-radius: 24px;
-	left: calc(50% - 24px/2 + 163.5px);
-	top: calc(50% - 24px/2 - 93px);
-}
-
-.eclipse4 {
-	position: absolute;
-	background: #523790;
-	width: 24px;
-	height: 24px;
-	border-radius: 24px;
-	right: calc(50% - 24px/2 - 163.5px);
-	top: calc(50% - 24px/2 - 11px);
-}
 
 
 
