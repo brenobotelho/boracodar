@@ -1,0 +1,170 @@
+/* 	FEITO COM <3 POR BRENO BOTELHO 
+
+	github.com/brenobotelho
+	instragram.com/@brenobotelho_
+
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+	
+	
+}
+
+:root {
+	--bg-color: #8E87FA;
+	--bg-box: #6D67D0;
+	--box-shadow-color: 0px 4px 32px rgba(15, 23, 42, 0.15);
+	--highlight: #7C3AED;
+	
+	font-size: 62.5%;
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	font-size: 1.6rem;
+	background: #8E87FA url(./images/background.png) no-repeat;
+	background-size: cover;
+	width: 100vw;
+	
+	
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	height: 100vh;
+}
+
+.box {
+	background: var(--bg-box);
+	border-radius: 10px;
+
+}
+
+.box-left {
+	width: 48rem;
+	height: 48rem;
+	margin-right: 3.2rem;
+	overflow: hidden;
+}
+
+.box-right {
+	border: 1px solid green;
+	width: 58rem;
+	height: 48rem;
+	word-break: break-all;
+}
+
+.box-top-right {
+	display: flex;
+	gap: 24px;
+	
+}
+
+.box-top-right .box {
+	width: 27.7rem;
+	height: 24.4rem;
+}
+
+.temperatura {
+	background: url(./images/nuvem.svg) no-repeat center/cover;
+	background-size: cover;
+	height: 48rem;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.temperatura::before{
+	content: '';
+	background: url(./images/weather.png) no-repeat;
+	position: absolute;
+    	
+	width: 17.6rem;
+	height: 17.6rem;
+
+	margin-top: -8rem;
+    	margin-left: -5rem;
+}
+
+.temperatura .location {
+	text-align: right;
+	padding: 3.2rem;
+
+	font-weight: 700;
+	font-size: 1.4rem;
+	color: #C2BFF4;
+}
+
+.temperatura .middle {
+	/* background: blue; */
+	
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.middle .number {
+	font-size: 8.8rem;
+	font-weight: 700;
+}
+
+.middle .number::after{
+	content: 'ºC';
+	font-size: 2.4rem;
+	color: #DAD8F7;
+	margin: 1.5rem 0.4rem;
+	position: absolute;
+}
+
+.temperatura .bottom {
+	display: flex;
+	justify-content: center;
+	gap: 0.8rem;
+	padding: 1.2rem;
+
+	
+}
+
+.bottom .info-clima {
+	width: 14.6rem;
+	background: rgba(102, 96, 200, 0.6);
+	border-radius: 0.6rem;
+	padding: 1.2rem 1.6rem;
+}
+
+iconify-icon {
+	font-size: 3.2rem;
+	color: #fff;
+	opacity: 0.4;
+	margin-right: 1.2rem;
+}
+
+
+
+.previsao {
+	margin-top: 24px;
+	overflow: hidden;
+}
+
+
+
+@media (max-width: 1000px){
+	main {
+		flex-direction: column;
+	}
+	.box-right {
+		margin-top: 10rem;
+	}
+}
+
+
+
+
