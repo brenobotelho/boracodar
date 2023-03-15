@@ -20,6 +20,7 @@ Acompanhe as postagens dos desafios no meu [Linkedin](https://br.linkedin.com/in
 | `07` | `Encontre os melhores blocos de carnaval` |  [✍](https://github.com/brenobotelho/boracodar/tree/main/desafio7) |[💻](https://brenobotelho.github.io/boracodar/desafio7/) |
 | `08` | `Dashboard` | [✍](https://github.com/brenobotelho/boracodar/tree/main/desafio8) |[💻](https://brenobotelho.github.io/boracodar/desafio8/) |
 | `09` | `Conversor de Moeda` | [✍](https://github.com/brenobotelho/boracodar/tree/main/desafio9) |[💻](https://brenobotelho.github.io/boracodar/desafio9/) |
+| `10` | `Página de Clima` | [✍](https://github.com/brenobotelho/boracodar/tree/main/desafio10) |[💻](https://brenobotelho.github.io/boracodar/desafio10/) |
 
 
 
