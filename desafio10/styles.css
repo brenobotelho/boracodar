@@ -29,7 +29,7 @@ body {
 	font-size: 1.6rem;
 	background: #8E87FA url(./images/background.png) no-repeat;
 	background-size: cover;
-	width: 100vw;
+	height: 100vh;
 	
 	
 }
@@ -39,7 +39,7 @@ main {
 	justify-content: center;
 	align-items: center;
 	
-	height: 100vh;
+	height: 90%;
 }
 
 .box {
@@ -115,6 +115,16 @@ main {
 
 	margin-top: -8rem;
     	margin-left: -5rem;
+	animation: go-back 1.7s infinite alternate;
+}
+
+@keyframes go-back {
+	from {
+		transform: translateX(40px);
+	}
+	to {
+		transform: translateX(0);
+	}
 }
 
 .temperatura .location {
@@ -127,10 +137,9 @@ main {
 }
 
 .temperatura .middle {
-	/* background: blue; */
-	
 	text-align: center;
 	color: #FFFFFF;
+	margin-top: -100px;
 }
 
 .middle .number {
@@ -240,8 +249,8 @@ iconify-icon {
 	background: #f6c833;
 	border-radius: 50%;
 
-	top: 80%;
-	left: 50%;
+	top: 71%;
+	left: 48%;
 	
 	transform: rotate(calc(1deg * (((100 - var(--pos-x)) / -95) * 180)))
 	translate(10.6rem);
@@ -282,7 +291,7 @@ iconify-icon {
 time.now {
 	position: absolute;
 
-	top: 50%;
+	top: 35%;
 	left: 50%;
 	transform: translate(-50%);
 
@@ -337,9 +346,25 @@ time.now {
 	color: #DAD8F7;
 }
 
+.previsao .days-week p {
+	font-weight: 700;
+	font-size: 1.6rem;
+	line-height: 1.9rem;
+	color: white;
+}
+
+.previsao .days-week p span{
+	color: #C2BFF4;
+}
+
+footer {
+	text-align: center;
+
+}
 
 
-@media (max-width: 1000px){
+
+@media (max-width: 1200px){
 	main {
 		flex-direction: column;
 	}
