@@ -8,9 +8,10 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 	
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -21,12 +22,114 @@
 
 </head>
 <body>
+	
+	<main id="app">
+		<div class="box-left">
+			<div class="box temperatura"> 
+				<div class="location"> 
+					<i class='bx bxs-map'></i> 
+					São Paulo, SP
+				</div>
 
-	<main id="app" class="grid">
-		<div class="box temperatura"> Temperatura</div>
-		<div class="box qualidade-ar"> Qualidade do ar</div>
-		<div class="box horario-sol"> Horário Sol</div>
-		<div class="box previsao"> Previsão</div>
+				<div class="middle">
+					<div class="number"> 18 </div>
+					<div class="max-min"> 22º <span> 16º </span> </div>
+				</div>
+
+				<div class="bottom">
+					<div class="info-clima"> 
+						<iconify-icon icon="mdi:weather-dust"></iconify-icon> 
+						<div class="details"> 
+							<h3> Vento </h3>
+							<h2> 17 <span> km/h</span> </h2>
+						</div>
+					</div>
+					
+					<div class="info-clima"> <iconify-icon icon="mdi:humidity"></iconify-icon> 
+						<div class="details"> 
+							<h3> Umidade </h3>
+							<h2> 31 <span> % </span> </h2>
+						</div> 
+					</div>
+
+					<div class="info-clima"> <iconify-icon icon="material-symbols:weather-snowy"></iconify-icon> 
+						<div class="details"> 
+							<h3> Chuva </h3>
+							<h2> 10 <span> % </span> </h2>
+						</div>  
+					</div>
+				</div>  
+			</div>
+		</div>
+
+		<div class="box-right">
+			<div class="box-top-right">
+				<div class="box qualidade"> 
+					<div class="top"> <i class='bx bxs-leaf'></i> Qualidade do ar </div>
+
+					<div class="middle"> 
+						<div class="sense"> Boa </div>
+						<div class="sense-number"> 21 </div>  
+					</div>
+
+					<div class="bottom"> 
+						<div class="qualid-bottom"> <h3> 12.9 </h3> <h4> PM2.5</h4> </div>
+						<div class="qualid-bottom"> <h3> 12.9</h3> <h4> PM10</h4> </div>
+						<div class="qualid-bottom"> <h3> 2.1</h3> <h4> sO₂</h4> </div>
+						<div class="qualid-bottom"> <h3> 1.4</h3> <h4> NO₂</h4> </div>
+						<div class="qualid-bottom"> <h3> 21.2</h3> <h4> O₃</h4> </div>
+						<div class="qualid-bottom"> <h3> 0.7</h3> <h4> CO</h4> </div>
+						 
+					</div>
+				</div>
+
+				<div class="box horario"> <div class="top"> <i class='bx bxs-leaf'></i> Horário do sol </div> 
+					<div class="sun-chart"> 
+						<div class="chart"> <img src="./images/sun-chart.svg" "/> </div>
+
+						<time class="now">17:48</time>
+
+						<div class="time"> 
+							<time class="sunrise">06:00</time>
+							<time class="sunset">18:52</time>
+						</div>
+					</div> 
+				</div>
+			</div>
+
+			<div class="box previsao"> 
+
+				<div class="days-week"> 
+					<h4> Amanhã </h4>
+					<img src="./images/icons-week/weather.png" />
+					<p> 21º 16º </p>
+				</div>
+
+				<div class="days-week"> 
+					<h4> Sexta-Feira </h4>
+					<img src="./images/icons-week/sun.png" />
+					<p> 28º 20º </p>
+				</div>
+
+				<div class="days-week"> 
+					<h4> Sábado </h4>
+					<img src="./images/icons-week/weather-rain.png" />
+					<p> 25º 21º </p>
+				</div>
+
+				<div class="days-week"> 
+					<h4> Domingo </h4>
+					<img src="./images/icons-week/weather-radius.png" />
+					<p> 20º 14º </p>
+				</div>
+
+				<div class="days-week"> 
+					<h4> Segunda-Feira </h4>
+					<img src="./images/icons-week/weather-sun.png" />
+					<p> 24º 18º </p>
+				</div>
+			 </div>
+		</div>
 	</main>
 
 			 
