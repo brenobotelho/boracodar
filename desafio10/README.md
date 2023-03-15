@@ -23,7 +23,7 @@ Este site tem como objetivo a visualização climática de sua cidade, onde most
 
 Projeto construído a partir do layout proposto no desafio [#BoraCodar10](https://boracodar.dev/) realizado pela [Rocketseat](https://rocketseat.com.br). <br>
 
-📌 Utilizei o HTML para marcação do site, CSS para estilização e o Figma como base da criação do projeto front-end. **Não utilizei ainda uma API para interatividade dos usuários (farei em breve)**
+📌 Utilizei o HTML para marcação do site, CSS para estilização e o Figma como base da criação do projeto front-end. **Não utilizei ainda uma API para interatividade dos usuários (farei em breve).**
 
 ## 📑 Deploy
 
