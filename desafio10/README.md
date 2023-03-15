@@ -19,11 +19,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Este site tem como objetivo a visualização climática de sua cidade. <br>
+Este site tem como objetivo a visualização climática de sua cidade, onde mostra a temperatura atual (em grau celsius), a qualidade do ar, o horário do sol e a previsão do tempo dos próximos dias. <br>
 
 Projeto construído a partir do layout proposto no desafio [#BoraCodar10](https://boracodar.dev/) realizado pela [Rocketseat](https://rocketseat.com.br). <br>
 
-📌 Utilizei o HTML para marcação do site, CSS para estilização e o Figma como base da criação do projeto front-end.
+📌 Utilizei o HTML para marcação do site, CSS para estilização e o Figma como base da criação do projeto front-end. **Não utilizei ainda uma API para interatividade dos usuários (farei em breve)**
 
 ## 📑 Deploy
 
