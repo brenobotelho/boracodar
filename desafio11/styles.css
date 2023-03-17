@@ -1,0 +1,250 @@
+/* 	FEITO COM <3 POR BRENO BOTELHO 
+
+	github.com/brenobotelho
+	instragram.com/@brenobotelho_
+
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+	
+}
+
+:root {
+	--bg-right: url(./images/background.png) no-repeat;
+	--text-main: #142136;
+	--text-white: #ffffff;
+	--bg-login: #142136;
+	--bg-box: #22395d;
+	--color-purple: #7C3AED;
+	--color-purple-hover: #b28afd;
+	--color-button: #691ee9;
+	--color-icon: #8843ff;
+	
+	
+	font-size: 62.5%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+	font-size: 1.6rem;
+	color: var(--text-white);
+	
+	height: 100vh;
+
+	background: var(--bg-login);
+
+}
+
+main {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-purple);
+}
+
+a:hover {
+	color: var(--color-purple-hover);
+	transition: all 0.3s ease;
+}
+
+section {
+	width: 50%;
+	overflow: hidden;
+}
+section.login {
+	/* padding: 4rem 4rem 0 11.2rem; */
+	margin: 4rem 10rem;
+}
+
+section.login > .logo {
+	background: url(./images/logo.svg) no-repeat;
+	height: 100px;
+	margin-bottom: 5rem;
+}
+
+section.login > .content-form {
+	/*background: var(--bg-box);*/
+	width: fit-content;
+	height: 48.3rem;
+
+	
+
+}
+
+section.login > .content-form h1 {
+	font-weight: 700;
+	font-size: 3.6rem;
+}
+
+section.login > .content-form p {
+	width: 35.1rem;
+	margin: 1.6rem 0 4rem;
+	color: #475569;
+}
+
+section.login > .content-form form {
+	display: flex;
+	flex-direction: column;
+}
+
+section.login > .content-form form .title{
+	display: flex;
+	justify-content: space-between;
+
+	margin-top: 1.6rem;
+	font-weight: 600;
+	font-size: 1.4rem;
+	line-height: 2.1rem;	
+}
+
+
+section.login > .content-form form input{
+	background: var(--bg-box);
+	padding-left: 3.6rem;
+	margin-top: .8rem;
+	
+	width: 38.4rem;
+	height: 5.3rem;
+
+	border: none;
+	border-bottom: 1px solid var(--bg-box);
+	border-radius: .4rem;
+
+	color: var(--text-white);
+	font-size: 1.4rem;
+
+
+}
+
+section.login > .content-form form input:focus{
+	outline: none;
+	border-bottom: 2px solid var(--color-purple);
+	transition: all 0.2s ease;
+	transform: translateX(-.2rem);
+}
+
+section.login > .content-form button{
+	background: var(--color-button);
+	margin: 3.2rem 0;
+	padding: 1.6rem 2.4rem;
+	border-radius: .4rem;
+	border: none;
+
+	color: var(--bg-white);
+	font-weight: 700;
+	font-size: 1.6rem;
+}
+
+section.login > .content-form button:hover{
+	background: var(--color-purple);
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+section.login > .content-form form .create-account{
+	background: var(--color-purple);
+	
+}
+
+
+.fieldset {
+	position: relative;
+}
+
+.fieldset i{
+	position: absolute;
+	z-index: 1;
+	top: 2.6rem;
+	left: 1rem;
+	color: var(--color-icon);
+}
+
+
+
+
+
+
+
+section.right {
+	background: var(--bg-right);
+	background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Animação */
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Animação Fade-in*/
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+.fadeIn {
+  opacity:0;
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+  -webkit-animation-duration:2s;
+  -moz-animation-duration:2s;
+  animation-duration:2s;
+}
+
+
+
