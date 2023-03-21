@@ -20,10 +20,11 @@
 	--text-white: #ffffff;
 	--bg-login: #142136;
 	--bg-box: #22395d;
-	--color-purple: #7C3AED;
+	--color-purple: rgb(130, 87, 230);
 	--color-purple-hover: #b28afd;
 	--color-button: #691ee9;
 	--color-icon: #8843ff;
+	--color-gray: #7c7c7c;
 	
 	
 	font-size: 62.5%;
@@ -33,11 +34,8 @@
 body {
 	font-size: 1.6rem;
 	color: var(--text-white);
-	
 	height: 100vh;
-
 	background: var(--bg-login);
-
 }
 
 main {
@@ -58,10 +56,8 @@ a:hover {
 
 section {
 	width: 50%;
-	overflow: hidden;
 }
 section.login {
-	/* padding: 4rem 4rem 0 11.2rem; */
 	margin: 4rem 10rem;
 }
 
@@ -72,12 +68,8 @@ section.login > .logo {
 }
 
 section.login > .content-form {
-	/*background: var(--bg-box);*/
 	width: fit-content;
 	height: 48.3rem;
-
-	
-
 }
 
 section.login > .content-form h1 {
@@ -88,7 +80,7 @@ section.login > .content-form h1 {
 section.login > .content-form p {
 	width: 35.1rem;
 	margin: 1.6rem 0 4rem;
-	color: #475569;
+	color: var(--color-gray);
 }
 
 section.login > .content-form form {
@@ -132,6 +124,10 @@ section.login > .content-form form input:focus{
 	transform: translateX(-.2rem);
 }
 
+section.login > .content-form form input::placeholder{
+	color: var(--color-gray);
+}
+
 section.login > .content-form button{
 	background: var(--color-button);
 	margin: 3.2rem 0;
@@ -150,11 +146,6 @@ section.login > .content-form button:hover{
 	cursor: pointer;
 }
 
-section.login > .content-form form .create-account{
-	background: var(--color-purple);
-	
-}
-
 
 .fieldset {
 	position: relative;
@@ -168,7 +159,11 @@ section.login > .content-form form .create-account{
 	color: var(--color-icon);
 }
 
-
+.eye-password {
+	position: absolute;
+    	right: 1.6rem;
+	top: 40%;
+}
 
 
 
