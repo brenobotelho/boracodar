@@ -13,7 +13,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML
 - CSS
-- Gráfico SVG
+- Animações CSS
+- Javascript
 - Github
 - Figma
 
@@ -23,11 +24,11 @@ Este site tem como objetivo acessar a uma plataforma por via de sua página de l
 
 Projeto construído a partir do layout proposto no desafio [#BoraCodar11](https://www.figma.com/community/file/1217810469465160264) realizado pela [Rocketseat](https://rocketseat.com.br). <br>
 
-📌 Utilizei o HTML para marcação do site, CSS para estilização e o Figma como base da criação do projeto front-end.
+📌 Utilizei o HTML para marcação do site, CSS para estilização e para animações na página do login, o Figma como base da criação do projeto front-end e o Javascript para algumas funções do usuário.
 
 ## 📑 Deploy
 
-Acesse o site [clicando aqui](https://brenobotelho.github.io/boracodar/desafio10/).
+Acesse o site [clicando aqui](https://brenobotelho.github.io/boracodar/desafio11/).
 
 # 👤 Autor
 
