@@ -1,0 +1,8 @@
+Referências:
+
+https://colorlib.com/wp/html5-and-css3-login-forms/
+https://blog.avada.io/css/login-forms
+
+
+Kanban
+https://github.com/rafaelodon/kanban

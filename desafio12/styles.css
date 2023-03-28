@@ -1,0 +1,241 @@
+/* 	FEITO COM <3 POR BRENO BOTELHO 
+
+	github.com/brenobotelho
+	instragram.com/@brenobotelho_
+
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+	list-style: none;
+	
+}
+
+:root {
+	--bg-right: url(./images/background.png) no-repeat;
+	--text-main: #142136;
+	--text-white: #ffffff;
+	--bg-login: #142136;
+	--bg-box: #22395d;
+	--color-purple: rgb(130, 87, 230);
+	--color-purple-hover: #b28afd;
+	--color-main: #142136;
+	--color-button: #691ee9;
+	--color-icon: #8843ff;
+	--color-gray: #7c7c7c;
+	
+	
+	font-size: 62.5%;
+	font-family: 'Inter', sans-serif;
+}
+
+body {
+	font-size: 1.6rem;
+	color: var(--text-white);
+	background: var(--color-purple);
+
+	display: flex;
+}
+
+nav {
+	padding: 3.2rem 3.5rem;
+}
+
+nav > ul {
+
+	width: 11.3rem;
+	margin-top: 6rem;
+	
+}
+
+nav > ul li {
+	margin: 3.6rem 0;
+	
+	font-weight: 700;
+	
+}
+
+nav > ul li i{
+	font-size: 1.8rem;
+	margin-right: 1rem;
+	
+}
+
+
+a {
+	text-decoration: none;
+	/* color: var(--color-purple); */
+	color: white;
+}
+
+a:hover {
+	color: var(--color-purple-hover);
+	transition: all 0.3s ease;
+}
+
+main {
+	width: 100%;
+	background: var(--color-main);
+	border-radius: 3rem 0 0;
+	margin-top: 0.3rem;
+	padding: 4.8rem 3.2rem;
+}
+
+main > .header {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 2.4rem;
+	align-items: center;
+}
+
+main > .header .img-profile {
+	width: 6.4rem;
+	height: 6.4rem;
+	border-radius: 50%;
+	background: white;
+}
+
+main > .filter-search {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0 2.4rem;
+	margin: 3.2rem 0;
+	gap: 1.6rem;
+}
+
+main > .filter-search button{
+	padding: 12px 32px;
+	border: none;
+	outline: none;
+
+	background: #7C3AED;
+	border-radius: 5px;
+}
+
+main > .filter-search input{
+	width: 100%;
+	padding: 12px 32px;
+	background: #FFFFFF;
+	border: 0.7px solid #E3E3E3;
+	box-shadow: 0px 4px 16px rgba(22, 22, 22, 0.1);
+	border-radius: 5px;
+}
+
+main > .content {
+	
+	display: flex;
+	justify-content: space-around;
+	
+	
+}
+
+main > .content .column {
+	width: 30%;
+	padding: 2.4rem;	
+}
+
+.column > .card{
+	margin: 2.4rem 0;
+	padding: 2.4rem;
+	
+	
+	width: 100%;
+
+	overflow: hidden; 
+	text-overflow: ellipsis;  
+
+	background: #22395d;
+	border-radius: 8px;
+	
+}
+
+.column > .card h5 {
+	font-weight: 700;
+	font-size: 1.4rem;
+}
+
+.column > .card p {
+	font-size: 1.4rem;
+	margin: 1rem 0;
+}
+
+.column > .card span{
+	font-size: 1.1rem;
+	background: #8257e6;
+	color: #e5daff;
+	padding: .4rem .8rem;
+	border-radius: .8rem;
+	margin-right: .8rem;
+}
+
+
+
+
+
+
+
+
+
+/* Animação */
+
+.fadeInDown {
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+/* Animação Fade-in*/
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+.fadeIn {
+	opacity:0;
+	-webkit-animation:fadeIn ease-in 1;
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+	-webkit-animation-duration:2s;
+	-moz-animation-duration:2s;
+	animation-duration:2s;
+}
+
+
+
