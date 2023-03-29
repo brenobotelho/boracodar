@@ -1,0 +1,7 @@
+Referências:
+
+https://www.cupcom.com.br/programacao/10-css-de-cartao-de-credito-para-modernizar-seu-projeto.html
+
+https://github.com/arthurmousinho/dev-card
+
+https://htmlcss3tutorials.com/wp-content/uploads/images/payment-option-cards-checkout.webp

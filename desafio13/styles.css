@@ -1,0 +1,244 @@
+/* 	FEITO COM <3 POR BRENO BOTELHO 
+
+	github.com/brenobotelho
+	instragram.com/@brenobotelho_
+
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+	
+}
+
+:root {
+	--text-main: #142136;
+	--text-white: #ffffff;
+	--bg-color: #142136;
+	--bg-box: #22395d;
+	--color-purple: rgb(130, 87, 230);
+	--color-purple-hover: #b28afd;
+	--color-button: #691ee9;
+	--color-bg-modal: #1F2937;
+	--color-input: #111827;
+	--color-border-input: #374151;
+	--color-border-focus: #9333EA;
+	--color-gray: #cccccc;
+	
+	
+	font-size: 62.5%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+	font-size: 1.6rem;
+	color: var(--color-purple);
+	background: var(--bg-color);
+}
+
+main {
+	text-align: center;
+	margin: 20rem 0;
+}
+
+.card-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	width: 30rem;
+	margin: 2rem;
+	text-align: center;
+	padding: 1rem;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.card .top {
+	height: 15rem;
+	background: var(--color-gray);
+	border-radius: 5px 5px 0 0;
+	margin-bottom: 1rem;
+}
+
+.card p {
+	margin-top: .8rem;
+	font-size: 1.2rem;
+	color: #555;
+}
+
+.card > .top .button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	background: var(--color-gray);
+}
+
+.card .top i:hover{
+	transform: scale(1.5);
+	transition: .5s;
+}
+
+#open-modal-btn {
+	font-size: 5rem;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.modal {
+	display: block;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.65);
+	
+}
+
+.modal-content {
+	background: var(--color-bg-modal);
+	color: var(--text-white);
+	margin: 15% auto;
+	padding: 3.2rem;
+	border: 1px solid #888;
+	width: 60%;
+	border-radius: 5px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.modal-content > .content-left{
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+}
+
+.modal-content > .content-right{
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+}
+
+.modal-content > .content-left input{
+	background: var(--color-input);
+	padding: 1.2rem;
+	margin-top: .5rem;
+	
+	border: none;
+	border: 1px solid var(--color-border-input);
+	border-radius: .4rem;
+
+	color: var(--text-white);
+	font-size: 1.4rem;
+
+
+}
+
+.modal-content > .content-left input:focus{
+	outline: none;
+	border: 1px solid var(--color-border-focus);
+	transition: all 0.2s ease;
+	
+}
+
+.modal-content > .content-left input::placeholder{
+	color: var(--color-gray);
+}
+
+
+
+
+
+
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* Animação */
+
+.fadeInDown {
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+/* Animação Fade-in*/
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+.fadeIn {
+	opacity:0;
+	-webkit-animation:fadeIn ease-in 1;
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+	-webkit-animation-duration:2s;
+	-moz-animation-duration:2s;
+	animation-duration:2s;
+}
+
+
+
