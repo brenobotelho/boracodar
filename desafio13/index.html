@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
 	
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -52,15 +53,44 @@
 
 		<div id="modal" class="modal">
 			<div class="modal-content">
-				<!-- botão fechar X <span class="close">&times;</span> -->
+				<span class="close">&times;</span>
 
 				<div class="content-left"> 
-					<span>Número do cartão </span>
-					<input type="number" />
+					<span> Número do cartão </span>
+					<input type="number"
+					oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="numero" maxlength = "16" 					placeholder="Número como está no cartão" />
+
+					<span> Nome do titular </span>
+					<input type="text" id="nome" maxlength="1" placeholder="Nome como está no cartão" />
+
+					<div class="val-cvv">
+						<div class="val "> 
+							<span> Validade </span>
+							<input type="number" placeholder="mm/aa" />
+						</div>
+
+						<div class="cvv"> 
+							<span> CVV </span>
+							<input type="number" placeholder="***" />
+						</div>
+					</div>
 				</div>
 
+					
+				
+
 				<div class="content-right"> 
-					<span>Número do cartão </span>
+
+					<div class="cartao"> 
+						<div class="top"> 
+							<img src="./images/visa.svg" />
+							<img src="./images/aprox.svg" />
+						</div>
+						<div class="middle"> 1234 1234 1234 1234 </div>
+						<div class="bottom"> <span> Seu nome aqui </span> <div class="cc-val"> MM/AA </div> </div>
+					</div>
+						<div class="checked"> <i class='bx bxs-check-shield' style='color:#6ee7b7' ></i> Seus dados estão seguros</div>
+					</div>
 				</div>
 			</div>
 		</div>
