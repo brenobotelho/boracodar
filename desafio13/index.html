@@ -22,32 +22,24 @@
 </head>
 <body>
 	<main>
-		<h1> Meus cartões </h1>
+		<h1> Meus cartões </h1>		
 
-		<div class="card-container">
+		
 
-			<div class="card">
-				<div class="top"> </div>
+		<div class="cards"> 
 
-				<h2>Título do Card 1</h2>
-				<p>Conteúdo do card aqui!</p>
-			</div>
-
-			<div class="card">
-				<div class="top"> </div>
-
-				<h2>Título do Card 2</h2>
-				<p>Conteúdo do card aqui!</p>
-			</div>
+			<div class="card-container"> </div>
 
 			<div class="card">
 				<div class="top"> 
 					<div id="open-modal-btn" class="button"> <i class='bx bx-plus-circle'></i> </div>
 				</div>
 				<h2>Adicionar cartão</h2>
-				<p>Listar novo cartão</p>
+				<button class="btn-clear"> Limpar dados </button>
 			</div>
 		</div>
+
+				<footer> Desenvolvido por Breno Botelho | &copy 2023 </footer>
 	</main>
 
 
@@ -61,19 +53,23 @@
 					oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="numero" maxlength = "16" 					placeholder="Número como está no cartão" />
 
 					<span> Nome do titular </span>
-					<input type="text" id="nome" maxlength="1" placeholder="Nome como está no cartão" />
+					<input type="text" id="nome" maxlength="22" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" placeholder="Nome como está no cartão" onkeypress="return ApenasLetras(event,this);" />
 
 					<div class="val-cvv">
 						<div class="val "> 
 							<span> Validade </span>
-							<input type="number" placeholder="mm/aa" />
+							<input type="month" id="validade" value="2023-06" placeholder="mm/aa" />
 						</div>
 
 						<div class="cvv"> 
 							<span> CVV </span>
-							<input type="number" placeholder="***" />
+							<input type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="3" placeholder="***" />
 						</div>
+
+						
 					</div>
+						<button type="button" onclick="salvarDados()"> Adicionar cartão </button>
+						
 				</div>
 
 					
@@ -86,14 +82,16 @@
 							<img src="./images/visa.svg" />
 							<img src="./images/aprox.svg" />
 						</div>
-						<div class="middle"> 1234 1234 1234 1234 </div>
-						<div class="bottom"> <span> Seu nome aqui </span> <div class="cc-val"> MM/AA </div> </div>
+						<div class="middle"> 1234 1234 12** **** </div>
+						<div class="bottom"> <span> Seu nome aqui </span> <div class="cc-val"> AA/MM </div> </div>
 					</div>
 						<div class="checked"> <i class='bx bxs-check-shield' style='color:#6ee7b7' ></i> Seus dados estão seguros</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
+
 
     <script src="script.js"></script>
 	

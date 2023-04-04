@@ -30,19 +30,11 @@ window.addEventListener("click", (event) => {
 
 let numeroInput = document.querySelector("#numero");
 let nomeInput = document.querySelector("#nome");
+let validadeInput = document.querySelector("#validade");
+let cardNumero = document.querySelector(".middle");
 
 numeroInput.addEventListener("input", () => {
-    
-    let cardNumero = document.querySelector(".middle");
-	
-    if (numeroInput.value.length === 0) {
-        cardNumero.innerText = "1234 1234 12** ****"
-    }
-
-    else {
-        cardNumero.innerText = numeroInput.value;
-	formatarNumero()
-    }
+	formatarNumero();
 });
 
 nomeInput.addEventListener("input", () => {
@@ -54,25 +46,46 @@ nomeInput.addEventListener("input", () => {
 	}else{
 		cardNome.innerText = nomeInput.value;
 	}
-})
+});
 
 
+validadeInput.addEventListener("input", () => {
 
+	let cardVal = document.querySelector(".cc-val");
 
-
-let text = "123456789012"; 
-let result = text.substring(0, 4);
-let resulta = text.substring(4, 8);
-
-//document.getElementById("demo").innerHTML = result;
-console.log(result, resulta)
-
-
-let aa = document.querySelector("#numero");
-console.log(aa + "")
+	if (validadeInput.value.length === 0) {
+		cardVal.innerText = "AA/MM"
+	}else{
+		cardVal.innerText = validadeInput.value;
+	}
+});
 
 
 function formatarNumero() {
+	numeroInput.addEventListener('keydown', function(e) {
+		if (!/^\d+$/.test(e.key) 
+		&& e.key !== 'Backspace' 
+		&& e.key !== 'Delete' 
+		&& e.key !== 'ArrowLeft' 
+		&& e.key !== 'ArrowRight') {
+		e.preventDefault();
+		}
+	});
+
+	numeroInput.addEventListener('input', (e) => {
+		let inputValue = e.target.value
+		const firstDigit = inputValue.charAt(0)
+
+		if(inputValue == '') {
+			cardNumero.innerHTML = '1234 1234 12** ****'
+		} else {
+			cardNumero.innerHTML = inputValue.replace(/(.{4})/g, '$1 ')
+		}
+	});
+}
+
+
+/*function formatarNumero() {
   // Obter o valor digitado no campo de entrada
   const numero = document.querySelector("#numero").value;
   
@@ -87,26 +100,141 @@ function formatarNumero() {
   
   // Exibir o número formatado na div
   document.querySelector(".middle").textContent = numeroFormatado;
+}*/
+
+
+
+
+function ApenasLetras(e, t) {
+    try {
+        if (window.event) {
+            var charCode = window.event.keyCode;
+        } else if (e) {
+            var charCode = e.which;
+        } else {
+            return true;
+        }
+        if (
+            (charCode > 64 && charCode < 91) || 
+            (charCode > 96 && charCode < 123) ||
+            (charCode > 191 && charCode <= 255) // letras com acentos
+        ){
+            return true;
+        } else {
+            return false;
+        }
+    } catch (err) {
+        alert(err.Description);
+    }
 }
 
 
+// Função para salvar dados no localStorage
+function salvarDados() {
+  // Pega os dados do formulário
+  let nome = document.querySelector("#nome").value;
+  let numero = document.querySelector("#numero").value;
+  let validade = document.querySelector("#validade").value;
+  
+  // Cria um objeto com os dados do formulário
+  var dados = {
+    "nome": nome,
+    "numero": numero,
+    "validade": validade
+  };
+  
+  // Converte o objeto em uma string JSON
+  var dadosJSON = JSON.stringify(dados);
+  
+  // Salva os dados no localStorage com uma chave única
+  localStorage.setItem("dados-" + Date.now(), dadosJSON);
+  
+  // Limpa os campos do formulário
+  document.querySelector("#nome").value = "";
+  document.querySelector("#numero").value = "";
+  document.querySelector("#validade").value = "";
+  
+  // Atualiza a lista de dados salvos
+  atualizarListaDadosSalvos();
+}
 
-/* function formatarNumero() {
-  // Obter o valor digitado no campo de entrada
-  const numero = document.getElementById("numero").value;
+// Função para atualizar a lista de dados salvos
+function atualizarListaDadosSalvos() {
+
+  // Pega a lista onde os dados serão mostrados
+
+  let count = "";
+  let cards = document.querySelector(".card-container");
   
-  // Obter o mês e o ano a partir do valor digitado
-  const mes = numero.slice(0, 2);
-  const ano = numero.slice(2);
+  // Limpa a lista
+  cards.innerHTML = '';	
   
-  // Criar um objeto Date com o mês e o ano
-  const data = new Date(`${ano}-${mes}-01`);
-  
-  // Obter o nome do mês e o ano no formato desejado
-  const mesAno = data.toLocaleString("pt-BR", { month: "long", year: "numeric" });
-  
-  // Exibir o número formatado na div
-  document.getElementById("numero-formatado").textContent = mesAno;
-} */
+  // Itera sobre as chaves do localStorage e mostra os dados
+  for (var i = 0; i < localStorage.length; i++) {
+    var chave = localStorage.key(i);
+    if (chave.indexOf("dados-") === 0) {
+      var dadosJSON = localStorage.getItem(chave);
+      var dados = JSON.parse(dadosJSON);
+
+	
+	let card = document.createElement('div');
+  	card.classList.add('card');
+
+  	count++;
+
+	let top = document.createElement('div');
+  	top.classList.add('top');
+
+	let cartao = document.createElement('div');
+  	cartao.classList.add('cartao');
+	cartao.innerHTML = `<div class="top"> 
+				<img src="./images/visa.svg"> 
+				<img src="./images/aprox.svg" />
+			    </div> 
+				<div class="middle"> ${dados.numero} </div>
+				<div class="bottom"> <span> ${dados.nome} </span> <div class="cc-val"> ${dados.validade} </div> 
+			    </div>`;
+	
+
+	let h2 = document.createElement("h2");
+	h2.textContent = `Cartão ${count}`;
+
+	let p1 = document.createElement("p");
+	p1.textContent = `Este é o meu cartão ${count}`;
+
+	card.appendChild(top);
+	card.appendChild(cartao);
+	card.appendChild(h2);
+	card.appendChild(p1);
+	
+
+	cards.appendChild(card);
+	
+    }
+  }
+}
+
+// Atualiza a lista de dados salvos quando a página é carregada
+	window.onload = function() {
+	atualizarListaDadosSalvos();
+	
+}
+
+document.querySelector(".btn-clear").addEventListener("click", function(){
+	localStorage.clear();
+	alert("Todos os dados salvos foram limpos!");
+	window.location.reload(true);
+})
+
+
+
+
+
+
+
+
+
+
+
 
 
