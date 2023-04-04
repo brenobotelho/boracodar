@@ -53,7 +53,7 @@
 					oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="numero" maxlength = "16" 					placeholder="Número como está no cartão" />
 
 					<span> Nome do titular </span>
-					<input type="text" id="nome" maxlength="22" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" placeholder="Nome como está no cartão" onkeypress="return ApenasLetras(event,this);" />
+					<input type="text" id="nome" maxlength="22" placeholder="Nome como está no cartão" />
 
 					<div class="val-cvv">
 						<div class="val "> 
@@ -68,7 +68,7 @@
 
 						
 					</div>
-						<button type="button" onclick="salvarDados()"> Adicionar cartão </button>
+						<button type="button" class="add-cartao" > Adicionar cartão </button>
 						
 				</div>
 

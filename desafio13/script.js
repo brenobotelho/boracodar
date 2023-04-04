@@ -1,41 +1,49 @@
 "use strict"
 
-// Encontra o botão de abrir o modal
-const openModalBtn = document.querySelector("#open-modal-btn");
+let openModalBtn = document.querySelector("#open-modal-btn");
+let modal = document.querySelector("#modal");
+let closeModalBtn = document.querySelector(".close");
 
-// Encontra o modal
-const modal = document.querySelector("#modal");
-
-// Encontra o botão de fechar o modal
-const closeModalBtn = document.querySelector(".close");
-
-// Quando o botão de abrir o modal é clicado, mostra o modal
 openModalBtn.addEventListener("click", () => {
-  modal.style.display = "block";
+	modal.style.display = "block";
 });
 
-// Quando o botão de fechar o modal é clicado, esconde o modal
 closeModalBtn.addEventListener("click", () => {
-  modal.style.display = "none";
+	modal.style.display = "none";
 });
 
-// Quando o usuário clica fora do modal, esconde o modal
 window.addEventListener("click", (event) => {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+	if (event.target == modal) {
+	modal.style.display = "none";
+	}
 });
-
 
 
 let numeroInput = document.querySelector("#numero");
 let nomeInput = document.querySelector("#nome");
 let validadeInput = document.querySelector("#validade");
 let cardNumero = document.querySelector(".middle");
+let buttonAdd = document.querySelector(".add-cartao");
 
-numeroInput.addEventListener("input", () => {
-	formatarNumero();
+buttonAdd.addEventListener("click", function(){
+	verificar();
 });
+
+numeroInput.addEventListener('input', (e) => {
+
+		formatarNumero();
+
+		let inputValue = e.target.value
+		const firstDigit = inputValue.charAt(0)
+
+		if(inputValue == '') {
+			cardNumero.innerHTML = '1234 1234 12** ****'
+		} else {
+			cardNumero.innerHTML = inputValue.replace(/(.{4})/g, '$1 ')
+		}
+	
+});
+
 
 nomeInput.addEventListener("input", () => {
 
@@ -45,6 +53,7 @@ nomeInput.addEventListener("input", () => {
 		cardNome.innerText = "Nome como está no cartão"
 	}else{
 		cardNome.innerText = nomeInput.value;
+		formatarNome();
 	}
 });
 
@@ -60,6 +69,17 @@ validadeInput.addEventListener("input", () => {
 	}
 });
 
+function formatarNome(){
+	nomeInput.addEventListener('keydown', (e) => {
+	let onlyLetters = /^[a-zA-Z\s]+$/
+
+		if (!onlyLetters.test(e.key)) {
+		e.preventDefault();
+		}
+	});
+
+};
+
 
 function formatarNumero() {
 	numeroInput.addEventListener('keydown', function(e) {
@@ -72,109 +92,45 @@ function formatarNumero() {
 		}
 	});
 
-	numeroInput.addEventListener('input', (e) => {
-		let inputValue = e.target.value
-		const firstDigit = inputValue.charAt(0)
-
-		if(inputValue == '') {
-			cardNumero.innerHTML = '1234 1234 12** ****'
-		} else {
-			cardNumero.innerHTML = inputValue.replace(/(.{4})/g, '$1 ')
-		}
-	});
 }
 
-
-/*function formatarNumero() {
-  // Obter o valor digitado no campo de entrada
-  const numero = document.querySelector("#numero").value;
-  
-  // Remover todos os espaços em branco do valor digitado
-  const numeroSemEspacos = numero.replace(/\s/g, "");
-  
-  // Separar o valor em grupos de 4 caracteres usando expressão regular
-  const grupos = numeroSemEspacos.match(/.{1,4}/g);
-  
-  // Adicionar espaçamento a cada grupo de 4 caracteres
-  const numeroFormatado = grupos.join(" ");
-  
-  // Exibir o número formatado na div
-  document.querySelector(".middle").textContent = numeroFormatado;
-}*/
-
-
-
-
-function ApenasLetras(e, t) {
-    try {
-        if (window.event) {
-            var charCode = window.event.keyCode;
-        } else if (e) {
-            var charCode = e.which;
-        } else {
-            return true;
-        }
-        if (
-            (charCode > 64 && charCode < 91) || 
-            (charCode > 96 && charCode < 123) ||
-            (charCode > 191 && charCode <= 255) // letras com acentos
-        ){
-            return true;
-        } else {
-            return false;
-        }
-    } catch (err) {
-        alert(err.Description);
-    }
-}
-
-
-// Função para salvar dados no localStorage
 function salvarDados() {
-  // Pega os dados do formulário
-  let nome = document.querySelector("#nome").value;
-  let numero = document.querySelector("#numero").value;
-  let validade = document.querySelector("#validade").value;
   
-  // Cria um objeto com os dados do formulário
-  var dados = {
-    "nome": nome,
-    "numero": numero,
-    "validade": validade
-  };
+	let nome = document.querySelector("#nome").value;
+	let numero = document.querySelector("#numero").value;
+	let validade = document.querySelector("#validade").value;
   
-  // Converte o objeto em uma string JSON
-  var dadosJSON = JSON.stringify(dados);
+	var dados = {
+		"nome": nome,
+		"numero": numero,
+		"validade": validade
+	};
   
-  // Salva os dados no localStorage com uma chave única
-  localStorage.setItem("dados-" + Date.now(), dadosJSON);
+	var dadosJSON = JSON.stringify(dados);
   
-  // Limpa os campos do formulário
-  document.querySelector("#nome").value = "";
-  document.querySelector("#numero").value = "";
-  document.querySelector("#validade").value = "";
+	localStorage.setItem("dados-" + Date.now(), dadosJSON);
   
-  // Atualiza a lista de dados salvos
-  atualizarListaDadosSalvos();
+	document.querySelector("#nome").value = "";
+	document.querySelector("#numero").value = "";
+	document.querySelector("#validade").value = "";
+  
+	
+	atualizarListaDadosSalvos();
+	
 }
 
-// Função para atualizar a lista de dados salvos
 function atualizarListaDadosSalvos() {
 
-  // Pega a lista onde os dados serão mostrados
-
-  let count = "";
-  let cards = document.querySelector(".card-container");
+	let count = "";
+	let cards = document.querySelector(".card-container");
   
-  // Limpa a lista
-  cards.innerHTML = '';	
+	cards.innerHTML = '';	
   
-  // Itera sobre as chaves do localStorage e mostra os dados
-  for (var i = 0; i < localStorage.length; i++) {
-    var chave = localStorage.key(i);
-    if (chave.indexOf("dados-") === 0) {
-      var dadosJSON = localStorage.getItem(chave);
-      var dados = JSON.parse(dadosJSON);
+	for (var i = 0; i < localStorage.length; i++) {
+	var chave = localStorage.key(i);
+	if (chave.indexOf("dados-") === 0) {
+	var dadosJSON = localStorage.getItem(chave);
+	var dados = JSON.parse(dadosJSON);
 
 	
 	let card = document.createElement('div');
@@ -207,14 +163,11 @@ function atualizarListaDadosSalvos() {
 	card.appendChild(h2);
 	card.appendChild(p1);
 	
-
 	cards.appendChild(card);
-	
+
     }
   }
 }
-
-// Atualiza a lista de dados salvos quando a página é carregada
 	window.onload = function() {
 	atualizarListaDadosSalvos();
 	
@@ -227,7 +180,16 @@ document.querySelector(".btn-clear").addEventListener("click", function(){
 })
 
 
+function verificar(){
 
+		if(numeroInput.value.length < 12 || nomeInput.value == '') {
+			alert("Credenciais erradas! Verifique os campos novamente.")
+		}else {
+			salvarDados();
+			alert("Cartão adicionado com sucesso!")
+		} 
+
+}
 
 
 
