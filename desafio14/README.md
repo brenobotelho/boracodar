@@ -1,11 +1,11 @@
-<h1 align="center"> 👾 #BoraCodar | Desafio 13 | Formulário de Cartão de Crédito 👾 </h1>
+<h1 align="center"> 👾 #BoraCodar | Desafio 14 | Componente de Upload 👾 </h1>
 
 <p align="center">
-    <i> "Desenvolva uma formulário de Cartão de Crédito." </i> 
-    <br> Este é o meu décimo terceiro desafio <a href="https://boracodar.dev/">#BoraCodar</a> da RocketSeat.
+    <i> "Desenvolva um componente de Upload." </i> 
+    <br> Este é o meu décimo quarto desafio <a href="https://boracodar.dev/">#BoraCodar</a> da RocketSeat.
 </p>
 
-![..](./print13.png)
+![..](./print14.png)
 
 ## 🚀 Tecnologias
 
@@ -14,25 +14,22 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - HTML
 - CSS
 - Animações CSS
-- Javascript
+- Javascript (Vanilla)
 - Github
 - Figma
 
 ## 💻 Projeto
 
-Neste projeto, eu fui mais a fundo e criei um gerenciador de cartões de crédito. <br>
+Criei neste projeto um simples site onde consigo realizar o upload de arquivos. <br>
 
-Tive como objetivo armazenar os cartões de crédito no sistema (localStorage) onde com muita facilidade você salva e exclui seus cartões. <br>
+Projeto construído a partir do layout proposto no desafio [#BoraCodar14](https://www.figma.com/community/file/1222904930776225825/%23boraCodar---Desafio-14) realizado pela [Rocketseat](https://rocketseat.com.br). <br>
 
-Projeto construído a partir do layout proposto no desafio [#BoraCodar13](https://www.figma.com/community/file/1222904930776225825/%23boraCodar---Desafio-13) realizado pela [Rocketseat](https://rocketseat.com.br). <br>
+📌 Utilizei o HTML para marcação do site, CSS para estilização e para animações na página, o Figma como base da criação do projeto front-end e o Javascript para funções específicas, como a realização de upload no site, botão de excluir elemento, etc.
 
-📌 Utilizei o HTML para marcação do site, CSS para estilização e para animações na página, o Figma como base da criação do projeto front-end e o Javascript como funções específicas do usuário, tais como o salvamento dos dados em localStorage, regras de input (somente letras ou numeros), criei um modal para adicionar os cartões a sua lista.
-
-Neste projeto, eu pretendo seguir a diante e possívelmente criar um sistema de gerenciador de cartões com mais funcionalidades, onde eu sempre estarei postando as atualizações aqui e no [Linkedin](https://br.linkedin.com/in/breno-botelho?trk=public_profile_browsemap) pra vocês!
 
 ## 📑 Deploy
 
-Acesse o site [clicando aqui](https://brenobotelho.github.io/boracodar/desafio13/).
+Acesse o site [clicando aqui](https://brenobotelho.github.io/boracodar/desafio14/).
 
 # 👤 Autor
 
