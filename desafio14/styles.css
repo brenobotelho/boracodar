@@ -1,0 +1,243 @@
+/* 	FEITO COM <3 POR BRENO BOTELHO 
+
+	github.com/brenobotelho
+	instragram.com/@brenobotelho_
+
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+	
+}
+
+:root {
+	--bg-color: #142136;
+	--text-color: #12eacb;
+	
+	font-size: 62.5%;
+	font-family: 'Inter', sans-serif;
+}
+
+body {
+	background: var(--bg-color);
+	color: white;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 14.2rem auto;
+}
+
+.upload {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	width: 44rem;
+	
+	background: #172c4c; //#5b6b89
+	border: 2px dashed #0e2550;
+	border-radius: .8rem;
+}
+
+.upload h3 {
+	color: var(--text-color);
+	font-size: 1.8rem;
+}
+
+.upload p {
+	font-size: 1.6rem;
+	font-weight: 400;
+	margin-bottom: 4rem;
+}
+
+.file-upload {
+	display: inline-block;
+	padding: 6px 12px;
+	cursor: pointer;
+
+	font-size: 6rem;
+	color: var(--text-color);
+}
+
+#file-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.file-item {
+	display: flex;
+	align-items: center;
+
+	width: 44em;
+	margin: 2rem;
+	padding: .8rem;
+
+	background: white;
+	color: #575361;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.file-icon{
+	background: #172c4c;
+	border-radius: .4rem;
+}
+
+.file-icon i{
+	color: white;
+	font-size: 3rem;
+	padding: 2rem 1.6rem;
+}
+
+.file-name {
+	margin: 0 1.2rem;
+	width: 100%;
+	
+	display: flex;
+	flex-direction: column;
+}
+
+.file-name .top {
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.file-name h2 {
+	font-weight: 700;
+	font-size: 1.4rem;
+}
+
+.file-name h3 {
+	font-weight: 500;
+	font-size: 1.2rem;
+}
+
+.progress-bar-container {
+	width: 100%;
+	height: 1.5rem;
+	margin-top: 1rem;
+	background-color: #f2f2f2;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+}
+
+.progress-bar {
+	height: 100%;
+	background-color: #007bff;
+	border-radius: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: width 0.3s ease-in-out;
+}
+
+.progress-bar-fill {
+	height: 100%;
+	background-color: #172c4c;
+	border-radius: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	animation: fill-progress-bar 6s ease-in-out forwards;
+}
+
+.progress-bar-text {
+	position: absolute;
+	top: 0;
+	width: 40px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+
+.upload-display {
+	display: none;
+}
+
+.close {
+	font-size: 1.7rem;
+	cursor: pointer;
+}
+
+
+/* Animações */
+
+@keyframes fill-progress-bar {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+.fadeInDown {
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+/* Animação Fade-in*/
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+.fadeIn {
+	opacity:0;
+	-webkit-animation:fadeIn ease-in 1;
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+	-webkit-animation-duration:2s;
+	-moz-animation-duration:2s;
+	animation-duration:2s;
+}
+
+
+
