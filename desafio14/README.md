@@ -22,7 +22,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Criei neste projeto um simples site onde consigo realizar o upload de arquivos. <br>
 
-Projeto construído a partir do layout proposto no desafio [#BoraCodar14](https://www.figma.com/community/file/1222904930776225825/%23boraCodar---Desafio-14) realizado pela [Rocketseat](https://rocketseat.com.br). <br>
+Projeto construído a partir do layout proposto no desafio [#BoraCodar14](https://www.figma.com/community/file/1225440656930547927/%23boraCodar---Desafio-14) realizado pela [Rocketseat](https://rocketseat.com.br). <br>
 
 📌 Utilizei o HTML para marcação do site, CSS para estilização e para animações na página, o Figma como base da criação do projeto front-end e o Javascript para funções específicas, como a realização de upload no site, botão de excluir elemento, etc.
 
