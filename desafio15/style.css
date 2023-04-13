@@ -1,0 +1,250 @@
+/* 	FEITO COM <3 POR BRENO BOTELHO 
+
+	github.com/brenobotelho
+	instragram.com/@brenobotelho_
+
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+	
+}
+
+:root {
+	--bg-color: #142136;
+	--text-color: #12eacb;
+	--card-color: #1b2c46;
+	
+	font-size: 62.5%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+	background: var(--bg-color);
+	color: white;
+	height: 100vh;
+	
+}
+
+main {
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+	
+	
+}
+
+.container {
+	display: flex;
+	
+}
+
+.container:hover > :not(:hover) {
+	opacity: .4;
+	transform: scale(0.9);
+}
+
+.card {
+	width: 38.4rem;
+	height: 45.4rem;
+
+	background-color: var(--card-color);
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	
+	border-radius: 1rem;
+	padding: 4.8rem 3.2rem 3.2rem;
+	margin: 1rem;
+
+	position: relative;
+
+	cursor: pointer;
+	transition: .35s;
+
+}
+
+
+.card > .tag {
+	background: #FBA94C;
+	color: #0F172A;
+	border-radius: .6rem;
+	position: absolute;
+
+	width: 13.3rem;
+	height: 3.4rem;
+	left: calc(50% - 12rem/2 - 0.5px);
+	top: -1.8rem;
+	padding: .8rem 1.5rem;
+
+	
+	text-align: center;
+	font-weight: 700;
+	font-size: 1.2rem;
+	letter-spacing: 0.06rem;
+	text-transform: uppercase;
+}
+
+.card h3 {
+	color: var(--text-color);
+	font-weight: 600;
+	font-size: 1.4rem;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.card h1 {
+	font-weight: 700;
+	font-size: 3.2rem;
+}
+
+.card h2 {
+	font-weight: 700;
+	font-size: 2.4rem;
+	
+}
+
+.card > .plano {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+
+.card > .plano span {
+	font-weight: 400;
+	font-size: 1.8rem;
+}
+
+
+.card > .button {
+	margin: 3.2rem 0;
+	padding: 1.6rem 2.4rem;
+	
+	border: 1px solid var(--text-color);
+	border-radius: .4rem;
+	
+	text-align: center;
+	font-weight: 700;
+	font-size: 1.6rem;
+	cursor: pointer;
+	
+}
+
+.card > .button:hover {
+	background: var(--text-color);
+	color: #142136;
+	transition: all .5s ease-out;
+	
+}
+
+.card > .bottom {
+	border-top: 1px solid #334d76;
+	padding-top: 3.2rem ;
+
+	font-size: 1.6rem;
+	font-weight: 400;
+	letter-spacing: 0.06em;
+}
+
+.card > .bottom > .info {
+	display: flex;
+	justify-content: space-between;
+	
+	margin-bottom: 1.6rem;
+}
+
+.card > .bottom > .info span i{
+	color: #1B873F;
+	font-size: 2rem;
+	margin-right: .8rem;
+}
+
+
+/* Card center */
+
+.center {
+	background: #031228;
+}
+
+.btn {
+	background: var(--text-color);
+	border: none;
+	outline: none;
+	color: #142136;
+}
+
+.btn:hover {
+	transform: scale(1.1);
+}
+
+footer {
+	text-align: center;
+	font-size: 2rem;
+	
+}
+
+
+
+/* animações */
+
+
+.fadeInDown {
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+/* Animação Fade-in*/
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+.fadeIn {
+	opacity:0;
+	-webkit-animation:fadeIn ease-in 1;
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+	-webkit-animation-duration:2s;
+	-moz-animation-duration:2s;
+	animation-duration:2s;
+}
