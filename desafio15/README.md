@@ -21,7 +21,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Criei neste projeto um site de vendas, o chamado Pricing Table. <br>
 
-Projeto construído a partir do layout proposto no desafio [#BoraCodar14](https://www.figma.com/community/file/1227809985897425342/%23boracodar---Desafio-15) realizado pela [Rocketseat](https://rocketseat.com.br). <br>
+Projeto construído a partir do layout proposto no desafio [#BoraCodar15](https://www.figma.com/community/file/1227809985897425342/%23boracodar---Desafio-15) realizado pela [Rocketseat](https://rocketseat.com.br). <br>
 
 📌 Utilizei o HTML para marcação do site, CSS para estilização e para animações na página, animações hover e fadeIn; utilizei o Figma como base da criação do projeto front-end.
 
