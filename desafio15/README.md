@@ -5,7 +5,7 @@
     <br> Este é o meu décimo quarto desafio <a href="https://boracodar.dev/">#BoraCodar</a> da RocketSeat.
 </p>
 
-![..](./print15.png) ![..](./print151.png)
+![..](./print15.PNG) ![..](./print151.PNG)
 
 ## 🚀 Tecnologias
 
