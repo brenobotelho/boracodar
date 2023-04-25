@@ -1,0 +1,235 @@
+/* 	FEITO COM <3 POR BRENO BOTELHO 
+
+	github.com/brenobotelho
+	instragram.com/@brenobotelho_
+
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+	list-style: none;
+}
+
+:root {
+	--bg-color: #142136;
+	--text-color: #12eacb;
+	--card-color: #031228;
+	
+	font-size: 62.5%;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background: var(--bg-color);
+	color: #E1E1E6;
+	font-size: 1.6rem;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+
+.card {
+	width: 43rem;
+	/* height: 67.2rem; */
+
+	background-color: var(--card-color);
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	
+	border-radius: .8rem;
+
+	transition: .35s;
+	position: fixed;
+
+	overflow: hidden;
+
+}
+
+.card > .top {
+	background: #1e304e;
+
+	border-radius: .8rem;
+	padding: 4rem;
+}
+
+.card > .top .info{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2.4rem;
+}
+
+.card > .top .info h3 {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.card > .top .info .icons {
+	display: flex;
+	gap: 1.6rem;
+	font-size: 2.4rem;
+}
+
+.card > .top .search {
+	position: relative;
+	text-align: center;
+}
+
+.card > .top .search i{
+	position: absolute;
+	top: 1.4rem;
+	left: 2.4rem;
+	font-size: 1.6rem;
+}
+
+.card > .top input {
+	width: 100%;
+	padding: 1.6rem 5rem;
+
+	background-color: var(--card-color);
+	color: white;
+	border-radius: .5rem;
+
+	outline: none;
+	border: none;
+	font-size: 1.2rem;
+}
+
+.card > .top input:focus {
+	outline: none;
+	border: none;
+}
+
+.card > .top input::placeholder {
+	color: white;
+}
+
+
+/* Contatos */
+
+.card > .content::-webkit-scrollbar{
+	width: .8rem;
+}
+  
+.card > .content::-webkit-scrollbar-track{
+	background: transparent;
+}
+
+.card > .content::-webkit-scrollbar-thumb {
+	background: #633BBC;
+	border-radius: 999px;
+}
+  
+
+.card > .content {
+	padding: 4.8rem 4rem;
+	max-height: 50.7rem;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.card > .content .contact {
+	display: flex;
+	
+	margin: 0 0 5rem 0;
+
+}
+
+.card > .content .category h2 {
+	background: #633BBC;
+	padding: 1.4rem 2rem;
+	border-radius: .8rem;
+}
+
+.card > .content .contact .image {
+	width: 5.8rem;
+	height: 5.8rem;
+	background: white;
+	border-radius: 50%;
+
+	margin: 0 1.6rem 0 5.2rem;
+
+	overflow: hidden;
+}
+
+.card > .content .contact .image img {
+	width: 100%;
+
+}
+
+
+.card > .content .contact ul li {
+	display: flex;
+	align-items: center;
+	margin: 0 0 3rem 0;
+}
+
+
+
+
+/* animações */
+
+
+.fadeInDown {
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+/* Animação Fade-in*/
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+.fadeIn {
+	opacity:0;
+	-webkit-animation:fadeIn ease-in 1;
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+	-webkit-animation-duration:2s;
+	-moz-animation-duration:2s;
+	animation-duration:2s;
+}
