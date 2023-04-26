@@ -13,16 +13,13 @@
 
 	<title>#BoraCodar | Desafio 15 - Pricing Page</title>
 	<link rel="stylesheet" href="style.css">
-	<script src="script.js"></script>
+	<script src="javascript.js" defer></script>
 </head>
 
 <body>
 	<main>
 		
-		
-
-
-		<div class="card">
+		<div class="card fadeInDown">
 			<div class="top"> 
 				<div class="info"> 
 					<h3> Meus contatos </h3>  
@@ -31,7 +28,7 @@
 
 				<div class="search">
 					<i class='bx bx-search'></i>
-					<input type="text" placeholder="Busque por nome ou por dados de contato..." />
+					<input type="text" id="nomes" placeholder="Busque por nome ou por dados de contato..." />
 				</div>
 			</div>
 
@@ -39,12 +36,14 @@
 
 				<div class="contact">
 
-					<div class="category">
-						<h2> A </h2>
-					</div>
+						<div class="category">
+							<h2> A </h2>
+						</div>
 
-					<ul>
+					<ul class="lista-nomes">
+
 						<li> 
+							
 							<div class="image"> 
 								<img src="./images/adriano2.jpg" />
 							</div>
@@ -58,6 +57,7 @@
 						</li>
 
 						<li> 
+
 							<div class="image"> 
 								<img src="./images/amaral2.jpg" />
 							</div>
@@ -78,17 +78,19 @@
 				<div class="contact">
 
 					<div class="category">
-						<h2> B </h2>
-					</div>
+								<h2> B </h2>
+							</div>
 
-					<ul>
+					<ul class="lista-nomes">
+
 						<li> 
+
 							<div class="image"> 
-								<img src="./images/bebeto.jpeg" />
+								<img src="./images/buffon.jpg" />
 							</div>
 					
 							<div class="name"> 
-								<h3> Bebeto </h3>
+								<h3> Buffon </h3>
 								<span> (11) 98251-7271 </span>
 							</div>
 						</li>
@@ -100,11 +102,13 @@
 				<div class="contact">
 
 					<div class="category">
-						<h2> C </h2>
-					</div>
+								<h2> C </h2>
+							</div>
 
-					<ul>
+					<ul class="lista-nomes">
+
 						<li> 
+
 							<div class="image"> 
 								<img src="./images/cr7.jpg" />
 							</div>
@@ -117,14 +121,194 @@
 
 						<li> 
 							<div class="image"> 
-								<img src="./images/bebeto.jpeg" />
+								<img src="./images/cafu.jpg" />
 							</div>
 					
 							<div class="name"> 
-								<h3> Bebeto </h3>
+								<h3> Cafu </h3>
 								<span> (11) 98251-7271 </span>
 							</div>
 						</li>
+
+						<li> 
+							<div class="image"> 
+								<img src="./images/casemiro.jpg" />
+							</div>
+					
+							<div class="name"> 
+								<h3> Casemiro </h3>
+								<span> (11) 98251-7271 </span>
+							</div>
+						</li>
+
+					</ul>
+					
+				</div>
+
+				<div class="contact">
+
+					<div class="category">
+						<h2> D </h2>
+					</div>
+
+					<ul class="lista-nomes">
+						<li> 
+							<div class="image"> 
+								<img src="./images/deyverson.png" />
+							</div>
+					
+							<div class="name"> 
+								<h3> Deyverson </h3>
+								<span> (11) 98251-7271 </span>
+							</div>
+						</li>
+
+						<li> 
+							<div class="image"> 
+								<img src="./images/denilson.jpg" />
+							</div>
+					
+							<div class="name"> 
+								<h3> Denilson Show </h3>
+								<span> (11) 98251-7271 </span>
+							</div>
+						</li>
+
+						<li> 
+							<div class="image"> 
+								<img src="./images/casemiro.jpg" />
+							</div>
+					
+							<div class="name"> 
+								<h3> Casemiro </h3>
+								<span> (11) 98251-7271 </span>
+							</div>
+						</li>
+
+					</ul>
+					
+				</div>
+
+				<div class="contact">
+
+					<div class="category">
+						<h2> E </h2>
+					</div>
+
+					<ul class="lista-nomes">
+						<li> 
+							<div class="image"> 
+								<img src="./images/ederson.jpg" />
+							</div>
+					
+							<div class="name"> 
+								<h3> Ederson </h3>
+								<span> (11) 98251-7271 </span>
+							</div>
+						</li>
+
+
+					</ul>
+					
+				</div>
+
+				<div class="contact">
+
+					<div class="category">
+						<h2> L </h2>
+					</div>
+
+					<ul class="lista-nomes">
+						<li> 
+							<div class="image"> 
+								<img src="./images/messi.jpg" />
+							</div>
+					
+							<div class="name"> 
+								<h3> Lionel Messi </h3>
+								<span> (11) 98251-7271 </span>
+							</div>
+						</li>
+
+						<li> 
+							<div class="image"> 
+								<img src="./images/lewa.jpg" />
+							</div>
+					
+							<div class="name"> 
+								<h3> Lewandowski </h3>
+								<span> (11) 98251-7271 </span>
+							</div>
+						</li>
+
+						<li> 
+							<div class="image"> 
+								<img src="./images/paqueta.jpg" />
+							</div>
+					
+							<div class="name"> 
+								<h3> Lucas Paquetá </h3>
+								<span> (11) 98251-7271 </span>
+							</div>
+						</li>
+
+					</ul>
+					
+				</div>
+
+				<div class="contact">
+
+					<div class="category">
+						<h2> M </h2>
+					</div>
+
+					<ul class="lista-nomes">
+						<li> 
+							<div class="image"> 
+								<img src="./images/modric.jpeg" />
+							</div>
+					
+							<div class="name"> 
+								<h3> Modric </h3>
+								<span> (11) 98251-7271 </span>
+							</div>
+						</li>
+
+						<li> 
+							<div class="image"> 
+								<img src="./images/mbappe.jpeg" />
+							</div>
+					
+							<div class="name"> 
+								<h3> Mbappe </h3>
+								<span> (11) 98251-7271 </span>
+							</div>
+						</li>
+
+
+					</ul>
+					
+				</div>
+
+				<div class="contact">
+
+					<div class="category">
+						<h2> N </h2>
+					</div>
+
+					<ul class="lista-nomes">
+						<li> 
+							<div class="image"> 
+								<img src="./images/neymar.jpg" />
+							</div>
+					
+							<div class="name"> 
+								<h3> Neymar Jr </h3>
+								<span> (11) 98251-7271 </span>
+							</div>
+						</li>
+
+
 
 					</ul>
 					

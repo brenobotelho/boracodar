@@ -152,7 +152,6 @@ main {
 .card > .content .contact .image {
 	width: 5.8rem;
 	height: 5.8rem;
-	background: white;
 	border-radius: 50%;
 
 	margin: 0 1.6rem 0 5.2rem;
@@ -172,7 +171,10 @@ main {
 	margin: 0 0 3rem 0;
 }
 
-
+ul {
+	display: flex;
+	flex-direction: column;
+}
 
 
 /* animações */
