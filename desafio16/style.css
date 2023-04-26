@@ -40,18 +40,14 @@ main {
 
 .card {
 	width: 43rem;
-	/* height: 67.2rem; */
 
 	background-color: var(--card-color);
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	
 	border-radius: .8rem;
 
 	transition: .35s;
 	position: fixed;
-
 	overflow: hidden;
-
 }
 
 .card > .top {
@@ -64,6 +60,7 @@ main {
 .card > .top .info{
 	display: flex;
 	justify-content: space-between;
+	
 	margin-bottom: 2.4rem;
 }
 
@@ -74,6 +71,7 @@ main {
 
 .card > .top .info .icons {
 	display: flex;
+	
 	gap: 1.6rem;
 	font-size: 2.4rem;
 }
@@ -87,6 +85,7 @@ main {
 	position: absolute;
 	top: 1.4rem;
 	left: 2.4rem;
+	
 	font-size: 1.6rem;
 }
 
@@ -100,6 +99,7 @@ main {
 
 	outline: none;
 	border: none;
+	
 	font-size: 1.2rem;
 }
 
@@ -115,6 +115,7 @@ main {
 
 /* Contatos */
 
+
 .card > .content::-webkit-scrollbar{
 	width: .8rem;
 }
@@ -127,7 +128,6 @@ main {
 	background: #633BBC;
 	border-radius: 999px;
 }
-  
 
 .card > .content {
 	padding: 4.8rem 4rem;
@@ -138,9 +138,7 @@ main {
 
 .card > .content .contact {
 	display: flex;
-	
 	margin: 0 0 5rem 0;
-
 }
 
 .card > .content .category h2 {
@@ -155,25 +153,22 @@ main {
 	border-radius: 50%;
 
 	margin: 0 1.6rem 0 5.2rem;
-
 	overflow: hidden;
 }
 
 .card > .content .contact .image img {
 	width: 100%;
-
 }
 
+.card > .content .contact ul {
+	display: flex;
+	flex-direction: column;
+}
 
 .card > .content .contact ul li {
 	display: flex;
 	align-items: center;
 	margin: 0 0 3rem 0;
-}
-
-ul {
-	display: flex;
-	flex-direction: column;
 }
 
 
