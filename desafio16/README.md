@@ -1,11 +1,11 @@
-<h1 align="center"> 👾 #BoraCodar | Desafio 15 | Pricing Table 👾 </h1>
+<h1 align="center"> 👾 #BoraCodar | Desafio 16 | Página de Contatos 👾 </h1>
 
 <p align="center">
-    <i> "Desenvolva uma Pricing Table - Uma página de vendas" </i> 
-    <br> Este é o meu décimo quinto desafio <a href="https://boracodar.dev/">#BoraCodar</a> da RocketSeat.
+    <i> "Desenvolva uma Página de Contatos" </i> 
+    <br> Este é o meu décimo sexto desafio <a href="https://boracodar.dev/">#BoraCodar</a> da RocketSeat.
 </p>
 
-![..](./print15.PNG) ![..](./print151.PNG)
+![..](./print.png)
 
 ## 🚀 Tecnologias
 
@@ -14,20 +14,21 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - HTML
 - CSS
 - Animações CSS
+- Javascript
 - Github
 - Figma
 
 ## 💻 Projeto
 
-Criei neste projeto um site de vendas, o chamado Pricing Table. <br>
+Criei este projeto com uma temática futebolísta. Uma página de contato de astros do futebol. <br>
 
-Projeto construído a partir do layout proposto no desafio [#BoraCodar15](https://www.figma.com/community/file/1227809985897425342/%23boracodar---Desafio-15) realizado pela [Rocketseat](https://rocketseat.com.br). <br>
+Projeto construído a partir do layout proposto no desafio [#BoraCodar16](https://www.figma.com/community/file/1227809985897425342/%23boracodar---Desafio-16) realizado pela [Rocketseat](https://rocketseat.com.br). <br>
 
-📌 Utilizei o HTML para marcação do site, CSS para estilização e para animações na página, animações hover e fadeIn; utilizei o Figma como base da criação do projeto front-end.
+📌 Utilizei o HTML para marcação do site, CSS para estilização e para animações na página; utilizei o Figma como base da criação do projeto front-end e o Javascript para ações do usuário tais como exemplo a pesquisa por nome do contato.
 
 ## 📑 Deploy
 
-Acesse o site [clicando aqui](https://brenobotelho.github.io/boracodar/desafio15/).
+Acesse o site [clicando aqui](https://brenobotelho.github.io/boracodar/desafio16/).
 
 # 👤 Autor
 
