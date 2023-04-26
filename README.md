@@ -26,6 +26,7 @@ Acompanhe as postagens dos desafios no meu [Linkedin](https://br.linkedin.com/in
 | `13` | `Formulário de Cartão de Crédito` | [✍](https://github.com/brenobotelho/boracodar/tree/main/desafio13) |[💻](https://brenobotelho.github.io/boracodar/desafio13/) |
 | `14` | `Componente de Upload` | [✍](https://github.com/brenobotelho/boracodar/tree/main/desafio14) |[💻](https://brenobotelho.github.io/boracodar/desafio14/) |
 | `15` | `Pricing Table` | [✍](https://github.com/brenobotelho/boracodar/tree/main/desafio15) |[💻](https://brenobotelho.github.io/boracodar/desafio15/) |
+| `16` | `Página de Contatos` | [✍](https://github.com/brenobotelho/boracodar/tree/main/desafio16) |[💻](https://brenobotelho.github.io/boracodar/desafio16/) |
 
 
 # 👤 Autor
