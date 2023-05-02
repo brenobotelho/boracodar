@@ -2,7 +2,7 @@
 
 <p align="center">
     <i> "Desenvolva uma Date Picker / uma agenda" </i> 
-    <br> Este é o meu décimo sexto desafio <a href="https://boracodar.dev/">#BoraCodar</a> da RocketSeat.
+    <br> Este é o meu décimo sétimo desafio <a href="https://boracodar.dev/">#BoraCodar</a> da RocketSeat.
 </p>
 
 ![..](./print.png)
@@ -15,20 +15,21 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - CSS
 - Animações CSS
 - Javascript
+- Biblioteca FullCalendar
 - Github
 - Figma
 
 ## 💻 Projeto
 
-Criei este projeto com uma temática futebolísta. Uma página de contato de astros do futebol. <br>
+Criei este projeto com o intuito de permitir ao usuário selecionar uma data a partir de um calendário interativo. <br>
 
-Projeto construído a partir do layout proposto no desafio [#BoraCodar16](https://www.figma.com/community/file/1227809985897425342/%23boracodar---Desafio-16) realizado pela [Rocketseat](https://rocketseat.com.br). <br>
+Projeto construído a partir do layout proposto no desafio [#BoraCodar17](https://www.figma.com/community/file/1227809985897425342/%23boracodar---Desafio-17) realizado pela [Rocketseat](https://rocketseat.com.br). <br>
 
-📌 Utilizei o HTML para marcação do site, CSS para estilização e para animações na página; utilizei o Figma como base da criação do projeto front-end e o Javascript para ações do usuário tais como exemplo a pesquisa por nome do contato.
+📌 Utilizei o HTML para marcação do site, CSS para estilização e para animações na página; utilizei o Figma como base da criação do projeto front-end e o Javascript para ações do usuário tais como adicionar evento, selecionar datas no calendário, etc.
 
 ## 📑 Deploy
 
-Acesse o site [clicando aqui](https://brenobotelho.github.io/boracodar/desafio16/).
+Acesse o site [clicando aqui](https://brenobotelho.github.io/boracodar/desafio17/).
 
 # 👤 Autor
 
