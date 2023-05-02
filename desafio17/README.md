@@ -25,7 +25,7 @@ Criei este projeto com o intuito de permitir ao usuário selecionar uma data a p
 
 Projeto construído a partir do layout proposto no desafio [#BoraCodar17](https://www.figma.com/community/file/1227809985897425342/%23boracodar---Desafio-17) realizado pela [Rocketseat](https://rocketseat.com.br). <br>
 
-📌 Utilizei o HTML para marcação do site, CSS para estilização e para animações na página; utilizei o Figma como base da criação do projeto front-end e o Javascript para ações do usuário tais como adicionar evento, selecionar datas no calendário, etc.
+📌 Utilizei o HTML para marcação do site, CSS para estilização e para animações na página; utilizei o Figma como base da criação do projeto front-end e o Javascript para ações do usuário tais como adicionar evento, arrastar e redimensionar eventos, etc.
 
 ## 📑 Deploy
 
