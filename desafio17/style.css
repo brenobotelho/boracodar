@@ -1,0 +1,308 @@
+/* 	FEITO COM <3 POR BRENO BOTELHO 
+
+	github.com/brenobotelho
+	instragram.com/@brenobotelho_
+
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --body-bg-color: #142136;
+    --hover-bg-color: #009688;
+    --font-primary-color: #666666;
+    --calendar-bg-color: #fff;
+
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+button {
+    all: unset;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 1.6rem;
+
+    display: grid;
+    place-items: center;
+
+    background: var(--body-bg-color);
+    position: relative;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 3.2rem;
+}
+
+.calendar-wrapper {
+    max-width: 50rem;
+    width: 100%;
+    min-height: 40rem;
+
+    padding: 3.2rem;
+    margin-bottom: 3.2rem;
+    border-radius: 1.6rem;
+    background: var(--calendar-bg-color);
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.16);
+}
+
+.headerToolBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 2.4rem;
+}
+
+.headerToolBar .title {
+    font-weight: 700;
+    font-size: 2rem;
+
+    color: #black;
+}
+
+#calendar {
+    width: 100%;
+}
+
+#calendar * {
+    border: none;
+}
+
+.fc thead {
+    height: 3.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: var(--font-primary-color);
+}
+
+.fc .fc-daygrid-day-top {
+    justify-content: center;
+    color: var(--font-primary-color);
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.btn:active, .btn:hover {
+    background: var(--hover-bg-color);
+}
+
+.fc .fc-event-time {
+    display: none;
+}
+
+.fc .fc-event-title-container {
+    padding: .4rem .8rem;
+}
+
+.fc .fc-event-title {
+    font-family: 'Roboto', sans-serif;
+}
+
+.fc .fc-daygrid-day-number {
+    padding: 2px;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+    background: #68b1b5;
+    border-radius: .8rem;
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 3.2rem;
+}
+
+.buttons-wrapper button {
+    cursor: pointer;
+    padding: .8rem 2.4rem;
+    border-radius: 999px;
+    background: var(--calendar-bg-color);
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.16);
+
+    transition: box-shadow .3s;
+}
+
+.buttons-wrapper button:hover {
+    box-shadow: none;
+}
+
+.background {
+    display: none;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+
+    animation: appear .3s backwards;
+}
+
+.buttons-wrapper .today {
+	background: #68b1b5;
+}
+
+.add-event-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 90%;
+    max-width: 50rem;
+
+    padding: 2.4rem 3.2rem;
+    border-radius: .8rem;
+    background: #009688;
+}
+
+.add-event-wrapper .close-btn {
+    position: relative;
+    width: 1.5rem;
+    display: block;
+    margin-left: auto;
+
+    cursor: pointer;
+}
+
+.add-event-wrapper h2 {
+    margin-bottom: 3.2rem;
+}
+
+.input-wrapper {
+    display: flex;
+    gap: .4rem;
+    flex-direction: column;
+}
+
+.input-wrapper:not(:last-of-type) {
+    margin-bottom: 1.6rem;
+}
+
+.input-wrapper label {
+    font-size: 1.4rem;
+    line-height: 130%;
+    font-weight: 500;
+}
+
+.input-wrapper input {
+    width: 90%;
+    border: none;
+    padding: .8rem 1.6rem;
+    border-radius: .6rem;
+    box-shadow: .0rem .4rem 1.6rem rgba(22, 22, 22, 0.1);
+}
+
+.background.disappear {
+    animation: disappear .3s forwards;
+}
+
+.add-event-btn {
+    display: block;
+    margin: 3.2rem auto 0;
+
+    padding: .8rem 2.4rem;
+    border-radius: 999px;
+    background: #ffffff;
+    box-shadow: .0rem .4rem 1.6rem rgba(22, 22, 22, 0.1);
+
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.add-event-btn:hover {
+    box-shadow: none;
+}
+
+@keyframes appear {
+    from {
+        scale: 0;
+    }
+}
+
+@keyframes disappear {
+    from {
+        scale: 1;
+    }
+
+    to {
+        scale: 0;
+        opacity: 0;
+    }
+}
+
+@media (max-width: 475px) {
+    :root {
+        font-size: 50%;
+    }
+}
+
+.fadeInDown {
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}

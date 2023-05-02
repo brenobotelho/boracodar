@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto&display=swap" rel="stylesheet" />
+
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	<title> #BoraCodar | Desafio 17 - Date Picker </title>
+
+	<link rel="stylesheet" href="./style.css" />
+</head>
+  <body class="fadeInDown">
+    <div id="app">
+      <div class="background">
+        <div class="add-event-wrapper">
+		<i class='bx bx-x close-btn'></i>
+          <h2>Adicione um novo evento</h2>
+
+          <div class="input-wrapper">
+            <label for="event-name">Nome do evento</label>
+            <input type="text" id="event-name" placeholder="Digite o nome do evento..."/>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="start-date">Data de início</label>
+            <input type="date" name="date" id="start-date" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="end-date">Data final</label>
+            <input type="date" name="date" id="end-date" />
+          </div>
+
+          <button class="add-event-btn">Salvar evento</button>
+        </div>
+      </div>
+
+      <div class="calendar-wrapper">
+        <div class="headerToolBar">
+          <button class="prev btn">
+            <i class='bx bx-chevron-left'></i>
+          </button>
+          <div class="title"></div>
+          <button class="next btn">
+            <i class='bx bx-chevron-right' ></i>
+          </button>
+        </div>
+        <div id="calendar"></div>
+      </div>
+
+      <div class="buttons-wrapper">
+        <button class="today">Hoje</button>
+        <button class="show-add-event-wrapper">Adicionar evento</button>
+      </div>
+    </div>
+
+    <script src="
+https://cdn.jsdelivr.net/npm/fullcalendar@6.1.6/index.global.min.js
+"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
