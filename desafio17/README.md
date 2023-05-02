@@ -23,7 +23,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Criei este projeto com o intuito de permitir ao usuário selecionar uma data a partir de um calendário interativo. <br>
 
-Projeto construído a partir do layout proposto no desafio [#BoraCodar17](https://www.figma.com/community/file/1227809985897425342/%23boracodar---Desafio-17) realizado pela [Rocketseat](https://rocketseat.com.br). <br>
+Projeto construído a partir do layout proposto no desafio [#BoraCodar17](https://www.figma.com/community/file/1233047894822880766/%23boraCodar---Desafio-17?fuid=1204816527795907760) realizado pela [Rocketseat](https://rocketseat.com.br). <br>
 
 📌 Utilizei o HTML para marcação do site, CSS para estilização e para animações na página; utilizei o Figma como base da criação do projeto front-end e o Javascript para ações do usuário tais como adicionar evento, arrastar e redimensionar eventos, etc.
 
