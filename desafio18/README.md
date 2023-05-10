@@ -1,8 +1,8 @@
-<h1 align="center"> 👾 #BoraCodar | Desafio 17 | Date Picker 👾 </h1>
+<h1 align="center"> 👾 #BoraCodar | Desafio 18 | Card de Personagem 👾 </h1>
 
 <p align="center">
-    <i> "Desenvolva uma Date Picker / uma agenda" </i> 
-    <br> Este é o meu décimo sétimo desafio <a href="https://boracodar.dev/">#BoraCodar</a> da RocketSeat.
+    <i> "Desenvolva uma card de personagem do Star Wars" </i> 
+    <br> Este é o meu décimo oitavo desafio <a href="https://boracodar.dev/">#BoraCodar</a> da RocketSeat.
 </p>
 
 ![..](./print.png)
@@ -15,25 +15,27 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - CSS
 - Animações CSS
 - Javascript
-- Biblioteca FullCalendar
 - Github
 - Figma
 
 ## 💻 Projeto
 
-Criei este projeto com o intuito de permitir ao usuário selecionar uma data a partir de um calendário interativo. <br>
+Este projeto foi realizado em parceria com um amigo, o [Maik Emanoel.](https://github.com/maik-emanoel) <br>
 
-Projeto construído a partir do layout proposto no desafio [#BoraCodar17](https://www.figma.com/community/file/1233047894822880766/%23boraCodar---Desafio-17?fuid=1204816527795907760) realizado pela [Rocketseat](https://rocketseat.com.br). <br>
+Nós criamos três cards de personagens diferentes do Star Wars com suas respectivas características.
 
-📌 Utilizei o HTML para marcação do site, CSS para estilização e para animações na página; utilizei o Figma como base da criação do projeto front-end e o Javascript para ações do usuário tais como adicionar evento, arrastar e redimensionar eventos, etc.
+Este projeto foi construído a partir do layout proposto no desafio [#BoraCodar18](https://www.figma.com/community/file/1235589928611910732/%23boraCodar---Desafio-18) realizado pela [Rocketseat](https://rocketseat.com.br). <br>
+
+📌 Utilizamos o HTML para marcação e estrutura do site, o CSS para a estilização e para animações do site; o Figma como base da criação do projeto e o Javascript para ações do usuário como por exemplo ao clicar em algum dos cards, é trocado para o card do meio.
 
 ## 📑 Deploy
 
-Acesse o site [clicando aqui](https://brenobotelho.github.io/boracodar/desafio17/).
+Acesse o site [clicando aqui](https://brenobotelho.github.io/boracodar/desafio18/).
 
 # 👤 Autor
 
-**Breno Botelho**
+[Breno Botelho](https://github.com/brenobotelho)
+[Maik Emanoel](https://github.com/maik-emanoel)
 
 👾 _Me siga nas redes sociais!_
 
