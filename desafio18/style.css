@@ -1,143 +1,216 @@
-/* 	FEITO COM <3 POR BRENO BOTELHO 
-
-	github.com/brenobotelho
-	instragram.com/@brenobotelho_
-
-*/
-
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	-webkit-font-smoothing: antialiased;
-  	-moz-osx-font-smoothing: grayscale;
-	list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 :root {
-	--bg-color: linear-gradient(102.32deg, #030422 -2.74%, #090114 101.6%);
-	--card-color: linear-gradient(0deg, rgba(0, 1, 14, 0.5), rgba(0, 1, 14, 0.5)), linear-gradient(205.4deg, rgba(14, 23, 101, 0.85) 7.26%, rgba(42, 17, 92, 0.85) 100%);
-	--card-middle: linear-gradient(90.24deg, rgb(14 23 101) 0%, rgb(53 14 88) 98.1%);
-	--card-shadow-color: 0px 113px 45px rgba(0, 0, 0, 0.02), 0px 64px 38px rgba(0, 0, 0, 0.08), 0px 28px 28px rgba(0, 0, 0, 0.13), 0px 7px 16px rgba(0, 0, 0, 0.15), 0px 0px 0px rgba(0, 0, 0, 0.15);
-	--card-middle-shadow: 0px 294px 118px rgba(0, 0, 0, 0.03), 0px 165px 99px rgba(0, 0, 0, 0.1), 0px 73px 73px rgba(0, 0, 0, 0.17), 0px 18px 40px rgba(0, 0, 0, 0.2), 0px 0px 0px rgba(0, 0, 0, 0.2);
+    --bg-color: linear-gradient(102.32deg, #030422 -2.74%, #090114 101.6%);
+    --card-bg-color: #121214;
+    --character-name-color: #ECE4EF;
+    --font-primary-color: #D8CEDE;
+    --font-secondary-color: #9C83A7;
+    --card-box-shadow: 0px 113px 45px rgba(0, 0, 0, 0.02), 0px 64px 38px rgba(0, 0, 0, 0.08), 0px 28px 28px rgba(0, 0, 0, 0.13), 0px 7px 16px rgba(0, 0, 0, 0.15), 0px 0px 0px rgba(0, 0, 0, 0.15);
+    --middle-card-box-shadow: 0px 294px 118px rgba(0, 0, 0, 0.03), 0px 165px 99px rgba(0, 0, 0, 0.1), 0px 73px 73px rgba(0, 0, 0, 0.17), 0px 18px 40px rgba(0, 0, 0, 0.2), 0px 0px 0px rgba(0, 0, 0, 0.2);
 
-
-	font-size: 62.5%;
-	font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 body {
-	background: var(--bg-color);
-	color: #E1E1E6;
-	font-size: 1.6rem;
+    display: grid;
+    place-items: center;
+
+    min-height: 100vh;
+    font-size: 1.6rem;
+    background: var(--bg-color);
 }
 
-main {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
+#app {
+    width: 90%;
+    max-width: 91.6rem;
+
+    margin: auto;
 }
 
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    position: relative;
+}
 
 .card {
-	width: 34.8rem;
-	height: 40.6rem;
-	
-	transition: all 0.5s ease-in-out;
+    max-width: 34.8rem;
+    width: 100%;
+    height: 48.6rem;
+    position: relative;
+    z-index: 1;
 
-	z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 1.6rem;
+    box-shadow: var(--card-box-shadow);
+    background: var(--card-bg-color);
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    filter: blur(3px);
+    transition: all .3s ease-in-out;
+}
 
-	font-size: 20px;
-	cursor: pointer;
-
-	background: var(--card-color);
-	box-shadow: var(--card-shadow-color);
-	border-radius: 16px;
+.card img:first-child {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
 }
 
 .middle {
-	width: 33.6rem;
-	height: 40.8rem;
-	z-index: 2;
-	transform: scale(1.2);
+    max-width: 43.6rem;
+    width: 51%;
+    height: 60.8rem;
+    z-index: 3;
+    position: absolute;
 
-	background: var(--card-middle);
-	box-shadow: var(--card-middle-shadow);
-	border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 2rem;
+    box-shadow: var(--middle-card-box-shadow);
+    cursor: pointer;
+    filter: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* animações */
-
-
-.fadeInDown {
-	-webkit-animation-name: fadeInDown;
-	animation-name: fadeInDown;
-
-	-webkit-animation-duration: 1s;
-	animation-duration: 1s;
-
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
+.middle:hover {
+    filter: brightness(1.3);
 }
 
-@-webkit-keyframes fadeInDown {
-	0% {
-		opacity: 0;
-		-webkit-transform: translate3d(0, -100%, 0);
-		transform: translate3d(0, -100%, 0);
-	}
-	100% {
-		opacity: 1;
-		-webkit-transform: none;
-		transform: none;
-	}
+.middle .character-img {
+    animation: move .8s alternate infinite;
 }
 
-@keyframes fadeInDown {
-	0% {
-		opacity: 0;
-		-webkit-transform: translate3d(0, -100%, 0);
-		transform: translate3d(0, -100%, 0);
-	}
+.character-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 
-	100% {
-		opacity: 1;
-		-webkit-transform: none;
-		transform: none;
-	}
+    height: 92%;
+    z-index: -1;
 }
 
-/* Animação Fade-in*/
+.title-wrapper {
+    display: flex;
+    gap: 1.6rem;
+    flex-direction: column;
 
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-.fadeIn {
-	opacity:0;
-	-webkit-animation:fadeIn ease-in 1;
-	-moz-animation:fadeIn ease-in 1;
-	animation:fadeIn ease-in 1;
-	-webkit-animation-fill-mode:forwards;
-	-moz-animation-fill-mode:forwards;
-	animation-fill-mode:forwards;
-	-webkit-animation-duration:2s;
-	-moz-animation-duration:2s;
-	animation-duration:2s;
+    padding: 4.8rem 0 0 4rem;
+    width: 100%;
+    margin-bottom: 6rem;
+}
+
+.character-name {
+    font-size: 3.2rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: var(--character-name-color);
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.4);
+}
+
+.description {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    max-width: 26.3rem;
+    color: var(--font-primary-color);
+}
+
+.infos {
+    list-style: none;
+    padding: 0 0 0 4rem;
+    max-width: 23rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.infos li h4 {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--font-secondary-color);
+}
+
+.infos li span {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 130%;
+    color: var(--font-primary-color);
+}
+
+.left .title-wrapper, 
+.right .title-wrapper{
+    margin-bottom: 3rem;
+}
+
+.left .character-img, 
+.right .character-img {
+    bottom: -6rem;
+    right: -20%;
+}
+
+.left:hover,
+.right:hover {
+    transition: all .5s ease-in-out;
+    transform: translateY(-2rem);
+}
+
+.middle .rey-skywalker {
+    bottom: -5%;
+}
+
+.middle .bb8 {
+    bottom: -10%;
+    right: -30%;
+}
+
+.middle .finn {
+    bottom: -10%;
+    right: -15%;
+}
+
+@keyframes move{
+    to {
+        transform: translateY(-1rem);
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 50%;
+    }
+
+    #app {
+        margin: 3.2rem auto;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .middle {
+        width: 100%;
+        height: 57.8rem;
+    }
+}
+
+@media (max-width: 355px) {
+    .character-img {
+        height: 70%;
+    }
 }

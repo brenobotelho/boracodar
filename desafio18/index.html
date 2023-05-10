@@ -1,41 +1,141 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Wars: Personagens</title>
 
-	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="card-container">
+        <div class="card left">
+          <img src="./assets/card-bg.png" alt="Imagem de plano de fundo" />
 
-	<title>#BoraCodar | Desafio 18 - Contatos </title>
-	<link rel="stylesheet" href="style.css">
-	<script src="javascript.js" defer></script>
-</head>
+          <div class="title-wrapper">
+            <h2 class="character-name">Finn</h2>
+            <p class="description">"Finn", o apelido de FN-2187, foi um Humano sensível à Força que serviu como Stormtrooper da Primeira Ordem.</p>
+          </div>
 
-<body>
-	<main>
-		
-			<div class="card left">
-				<h2>E</h2>
-			</div>
+          <ul class="infos">
+            <li>
+              <h4>Filmes</h4>
+              <span>The Force Awakens</span>
+            </li>
 
-			<div class="card middle">
-				<h2>M</h2>
-			</div>
+            <li>
+              <h4>Espécie</h4>
+              <span>Humana</span>
+            </li>
 
-			<div class="card right">
-				<h2>D</h2>
-			</div>
-		
-			
-	</main>
-				
-	
-</body>
+            <li>
+              <h4>Altura</h4>
+              <span>1,78m</span>
+            </li>
+
+            <li>
+              <h4>Localidade</h4>
+              <span>Jakku</span>
+            </li>
+
+            <li>
+              <h4>Armas</h4>
+              <span>Sabre de luz, Blaster</span>
+            </li>
+          </ul>
+
+          <img src="./assets/finn.png" alt="Imagem do personagem Finn" class="character-img finn">
+        </div>
+        <div class="card middle">
+          <img
+            src="./assets/card-bg.png"
+            alt="Imagem de plano de fundo"
+          />
+
+          <div class="title-wrapper">
+            <h2 class="character-name">Rey Skywalker</h2>
+            <p class="description">Era uma catadora de sucata que descobriu ser sensível à Força durante sua busca ao lendário Mestre Jedi Luke Skywalker.</p>
+          </div>
+
+          <ul class="infos">
+            <li>
+              <h4>Filmes</h4>
+              <span>The Force Awakens, The Last Jedi, The Rise of Skywalker & Forces of Destiny</span>
+            </li>
+
+            <li>
+              <h4>Espécie</h4>
+              <span>Humana</span>
+            </li>
+
+            <li>
+              <h4>Altura</h4>
+              <span>1,7m</span>
+            </li>
+
+            <li>
+              <h4>Localidade</h4>
+              <span>Jakku</span>
+            </li>
+
+            <li>
+              <h4>Armas</h4>
+              <span>Sabre de luz, Blaster, Quarterstaff</span>
+            </li>
+          </ul>
+
+          <img src="./assets/rey-skywalker.png" alt="Imagem da personagem Rey Skywalker" class="character-img rey-skywalker">
+        </div>
+        <div class="card right">
+          <img src="./assets/card-bg.png" alt="Imagem de plano de fundo" />
+
+          <div class="title-wrapper">
+            <h2 class="character-name">BB-8</h2>
+            <p class="description">BB-8, apelidado de BB, era um droide astromecânico da série BB que operou aproximadamente trinta anos depois da Batalha de Endor.</p>
+          </div>
+
+          <ul class="infos">
+            <li>
+              <h4>Filmes</h4>
+              <span>The Force Awakens, The Last Jedi </span>
+            </li>
+
+            <li>
+              <h4>Espécie</h4>
+              <span>Robô</span>
+            </li>
+
+            <li>
+              <h4>Altura</h4>
+              <span>0,67m</span>
+            </li>
+
+            <li>
+              <h4>Localidade</h4>
+              <span>Hosnian-Prime</span>
+            </li>
+
+            <li>
+              <h4>Armas</h4>
+              <span>Eletrobastão</span>
+            </li>
+          </ul>
+
+          <img src="./assets/bb-8.png" alt="Imagem do personagem BB-8" class="character-img bb8">
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
 </html>
-
-
