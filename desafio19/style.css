@@ -1,0 +1,198 @@
+/* 	FEITO COM <3 POR BRENO BOTELHO 
+
+	github.com/brenobotelho
+	instragram.com/@brenobotelho_
+
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+	
+}
+
+:root {
+	--bg-color: #142136;
+	--text-color: #12eacb;
+	--card-color: #031228;
+	--color-secondy: #1b2d4a;
+
+	
+	font-size: 62.5%;
+	font-family: 'Inter', sans-serif;
+}
+
+body {
+	background: var(--bg-color);
+	color: white;
+	height: 100vh;
+	
+}
+
+main {
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+	
+	
+}
+
+.card {
+	width: 59.5rem;
+	height: 48.9rem;
+
+	background-color: var(--card-color);
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border-radius: 4rem;
+
+	padding: 2.4rem 3.8rem;
+
+	transition: .35s;
+}
+
+.card > .line-top {
+	width: 14.8rem;
+	height: 1rem;
+
+	border-radius: 999px;
+	background: var(--color-secondy);
+
+	margin: 0 auto;
+}
+
+.card > .info {
+	margin-top: 7.9rem;
+
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 2.8rem;
+}
+
+.card > .info strong {
+	color: #375b97;
+}
+
+.card > .info span {
+	font-weight: 500;
+	font-size: 1.5rem;
+}
+
+.card > .center {
+	margin-top: 7.9rem;
+	
+	display: flex;
+	justify-content: space-between;
+
+	height: 12rem;
+}
+
+.card > .center .left {
+	position: relative;
+}
+
+.card > .center .left .carro img{
+	position: absolute;
+
+	width: 25rem;
+	top: 1rem;
+	left: 6.5rem;
+}
+
+
+.card > .center .left .picture img{
+	width: 10.7rem;
+	height: 11.1rem;
+	background: white;
+	border-radius: 9999px;
+
+	left: 0;
+	top: 0;
+
+	position: absolute;
+}
+
+.card > .center .left .note{
+	position: absolute;
+
+	width: 8rem;
+	height: 2rem;
+	border-radius: 1.5rem;
+
+	top: 9.2rem;
+	left: 1.3rem;
+
+	padding: .3rem 2.2rem;
+	font-size: 1.2rem;
+
+	background: var(--color-secondy);
+}
+
+
+
+.card > .center .right .plate{
+	margin-top: 1.3rem;
+	font-weight: 700;
+	font-size: 2.9rem;
+	line-height: 50px;
+}
+
+.card > .center .right .car {
+	font-weight: 500;
+	font-size: 1.6rem;
+}
+
+.card > .name {
+	font-weight: 700;
+	font-size: 1.6rem;
+	margin-left: 4%;
+}
+
+.card > .bottom {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 3rem;
+}
+
+.card > .bottom input{
+	width: 80%;
+	padding: 1.2rem;
+	border-radius: 1.6rem;
+	border: none;
+	outline: none;
+
+	background: var(--color-secondy);
+	color: white;
+}
+
+.card > .bottom i{
+	font-size: 3.5rem;
+	color: #375b97;
+}
+
+footer {
+	text-align: center;
+	font-size: 2rem;
+	
+}
+
+@media (max-width: 600px) {
+    :root {
+        font-size: 50%;
+    }
+
+}
+
+@media (max-width: 450px) {
+    :root {
+        font-size: 30%;
+    }
+
+}
+
+
+
