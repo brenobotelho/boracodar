@@ -30,6 +30,9 @@ Acompanhe as postagens dos desafios no meu [Linkedin](https://br.linkedin.com/in
 | `17` | `Date Picker` | [✍](https://github.com/brenobotelho/boracodar/tree/main/desafio17) |[💻](https://brenobotelho.github.io/boracodar/desafio17/) |
 | `18` | `Card de Personagem` | [✍](https://github.com/brenobotelho/boracodar/tree/main/desafio18) |[💻](https://brenobotelho.github.io/boracodar/desafio18/) |
 | `19` | `Widget de Transporte` | [✍](https://github.com/brenobotelho/boracodar/tree/main/desafio19) |[💻](https://brenobotelho.github.io/boracodar/desafio19/) |
+| `20` | `Galeria com Hover` | [✍](https://github.com/brenobotelho/boracodar/tree/main/desafio20) |[💻](https://brenobotelho.github.io/boracodar/desafio20/) |
+| `21` | `Carrinho de Compras` | [✍](https://github.com/brenobotelho/boracodar/tree/main/desafio21) |[💻](https://brenobotelho.github.io/boracodar/desafio21/) |
+
 
 
 # 👤 Autor
