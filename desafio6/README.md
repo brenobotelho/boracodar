@@ -31,7 +31,7 @@ Acesse o site [clicando aqui](https://brenobotelho.github.io/boracodar/desafio6/
 
 **Breno Botelho**
 
-👾 _Me siga nas redes sociais!_
+👾 _Me siga nas redes sociais!!_
 
 - Github: [@brenobotelho](https://github.com/brenobotelho)
 - Instagram: [@brenobotelho_](https://instagram.com/@brenobotelho_)
