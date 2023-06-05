@@ -157,7 +157,7 @@ section > .cart-total {
 	font-size: 2rem;
 	padding: 3rem;
 	height: 20rem;
-	width: 100%;
+	width: 30%;
 	display: flex;
 	justify-content: space-between;
 	position: fixed;
