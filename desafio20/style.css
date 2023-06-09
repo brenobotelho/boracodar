@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Hepta Slab", serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-size: 50%;
+  background-color: #121214;
+  color: white;
+  padding: 14rem 13.4rem 14rem 11rem;
+}
+
+body::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #282843;
+  border-radius: 99.9rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.grid {
+  display: grid;
+  gap: 3.2rem;
+}
+
+header {
+  position: fixed;
+  max-width: 30rem;
+}
+
+header h1 {
+  font-size: 4.8rem;
+  font-weight: 400;
+}
+header i {
+  font-size: 3.2rem;
+  display: block;
+  margin-top: 3.2rem;
+}
+
+/* galery */
+main {
+  margin-left: 50.6rem;
+}
+
+.model-1 .container:nth-child(1) {
+  grid-row: 1/3;
+}
+
+.model-1 .container:nth-child(1) img,
+.model-2 .container:nth-child(3) img {
+  aspect-ratio: 9/16;
+}
+
+.horizontal {
+  grid-column: 1/3;
+}
+
+.horizontal img {
+  aspect-ratio: 16/9;
+}
+
+.model-2 .container:nth-child(3) {
+  grid-column: 2;
+  grid-row: 1/3;
+}
+
+/* hover */
+.container {
+  position: relative;
+  outline: 0.2rem solid transparent;
+  transition: all 0.4s;
+}
+
+.container span {
+  font-size: 2rem;
+  display: block;
+  width: 100%;
+  padding: 2.4rem;
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(to bottom, transparent, black 80%);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.container:hover span {
+  visibility: visible;
+  opacity: 1;
+}
+
+.container:hover {
+  outline-color: white;
+}
+
+@media (max-width: 1200px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    z-index: 1;
+    background-color: #121214;
+    position: static;
+  }
+  header i {
+    display: none;
+  }
+  main {
+    margin-top: 14rem;
+    margin-left: 0rem;
+  }
+  .grid {
+    display: grid;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+    padding: 8rem 5rem;
+  }
+}
