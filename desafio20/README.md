@@ -1,8 +1,8 @@
-<h1 align="center"> 👾 #BoraCodar | Desafio 18 | Card de Personagem 👾 </h1>
+<h1 align="center"> 👾 #BoraCodar | Desafio 20 | Galeria com Hover 👾 </h1>
 
 <p align="center">
-    <i> "Desenvolva uma card de personagem do Star Wars" </i> 
-    <br> Este é o meu décimo oitavo desafio <a href="https://boracodar.dev/">#BoraCodar</a> da RocketSeat.
+    <i> "Desenvolva uma Galeria com animação Hover" </i> 
+    <br> Este é o meu vigésimo desafio <a href="https://boracodar.dev/">#BoraCodar</a> da RocketSeat.
 </p>
 
 ![..](./print.png)
@@ -14,28 +14,25 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - HTML
 - CSS
 - Animações CSS
-- Javascript
 - Github
 - Figma
 
 ## 💻 Projeto
 
-Este projeto foi realizado em parceria com um amigo, o [Maik Emanoel.](https://github.com/maik-emanoel) <br>
 
-Nós criamos três cards de personagens diferentes do Star Wars com suas respectivas características.
+Desenvolvi este projeto a partir do Layout proposto no Figma; utilizei imagens abstratas com animação hover ao passar o mouse. <br>
 
-Este projeto foi construído a partir do layout proposto no desafio [#BoraCodar18](https://www.figma.com/community/file/1235589928611910732/%23boraCodar---Desafio-18) realizado pela [Rocketseat](https://rocketseat.com.br). <br>
+O projeto foi construído a partir do layout do Desafio [#BoraCodar20](https://www.figma.com/community/file/1235589928611910732/%23boraCodar---Desafio-20) realizado pela [Rocketseat](https://rocketseat.com.br). <br>
 
-📌 Utilizamos o HTML para marcação e estrutura do site, o CSS para a estilização e para animações do site; o Figma como base da criação do projeto e o Javascript para ações do usuário como por exemplo ao clicar em algum dos cards, é trocado para o card do meio.
+📌 Utilizei o HTML para marcação e estrutura do site, o CSS para a estilização e para animações do site, inclusive o hover e o Figma como base da criação do projeto e o 
 
 ## 📑 Deploy
 
-Acesse o site [clicando aqui](https://brenobotelho.github.io/boracodar/desafio18/).
+Acesse o site [clicando aqui](https://brenobotelho.github.io/boracodar/desafio20/).
 
 # 👤 Autor
 
 [Breno Botelho](https://github.com/brenobotelho)
-[Maik Emanoel](https://github.com/maik-emanoel)
 
 👾 _Me siga nas redes sociais!_
 
