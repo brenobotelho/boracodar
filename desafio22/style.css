@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Heebo", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(107.54deg, #935fd3 0%, #9245f1 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#app {
+  height: 58.4rem;
+  width: 37.5rem;
+  padding: 2.4rem 2.4rem 1.6rem 2.4rem;
+  background: #fdfcfe;
+  border: 0.1rem solid #f4effa;
+  box-shadow: 0rem 5.2rem 2.1rem rgba(30, 30, 30, 0.01),
+    0rem 2.9rem 1.8rem rgba(30, 30, 30, 0.05),
+    0rem 1.3rem 1.3rem rgba(30, 30, 30, 0.09),
+    0rem 0.3rem 0.7rem rgba(30, 30, 30, 0.1),
+    0rem 0rem 0rem rgba(30, 30, 30, 0.1);
+  border-radius: 1.2rem;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.user h1 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #38343d;
+}
+
+.user span {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #686071;
+}
+
+.about,
+.privacy,
+.preferences,
+.account {
+  border-top: 0.1rem solid #f4effa;
+  padding: 1.6rem 0 1.6rem;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 100%;
+  color: #797085;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 0rem;
+}
+
+.item-about:hover,
+.item:hover {
+  background-color: #ececec;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  padding: 0.8rem 0.4rem;
+  transition: all 0.3s ease-in;
+}
+
+.c1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #38343d;
+}
+
+i {
+  font-size: 2rem;
+  color: #38343d;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.item-about {
+  padding: 0.8rem 0rem;
+}
+
+.red h4,
+.red i {
+  color: #aa2222;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	color: white;
+	font-weight: 700;
+}
