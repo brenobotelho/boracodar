@@ -5,7 +5,7 @@
     <br> Este é o meu vigésimo primeiro desafio <a href="https://boracodar.dev/">#BoraCodar</a> da RocketSeat.
 </p>
 
-![..](./print.png)
+![..](./print.PNG)
 
 ## 🚀 Tecnologias
 
