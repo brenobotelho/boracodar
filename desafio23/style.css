@@ -1,0 +1,196 @@
+/* FEITO COM <3 POR BRENO BOTELHO 
+
+  github.com/brenobotelho
+  instragram.com/@brenobotelho_
+
+*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+
+  --purple-mid: #633BBC;
+  --purple-light: #8257E5;
+  --gray-100: #E1E1E6;
+  --gray-200: #8D8D99;
+  --gray-300: #7C7C8A;
+  --gray-400: #323238;
+  --success-color: #1D8841;
+
+  font-size: 62.5%;
+  font-family: 'IBM Plex Sans', sans-serif;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+body {
+	width: 100vw;
+	height: 100vh;
+
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section {
+	width: 59.2rem;
+	border: 1px solid var(--gray-100);
+	border-radius: .6rem;
+	padding: 3.2rem;
+
+	font-size: 1.6rem;
+
+}
+
+.contato {
+	display: block;
+}
+
+section > .top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	border-bottom: 1px solid var(--gray-100);
+	padding-bottom: 3.2rem;
+}
+
+.top>.steps {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: .8rem;
+	padding: .8rem;
+}
+
+.top>.steps h3 {
+	color: var(--gray-200);
+}
+
+.top>.steps .select {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 2.8rem;
+	height: 2.8rem;
+	background: var(--gray-100);
+	color: var(--gray-200);
+	border-radius: 5rem;
+	font-weight: 700;
+}
+
+
+
+/* Ativado / sucesso / cor roxo */
+
+.top .steps.active .select {
+	background: var(--purple-mid);
+	color: white;
+}
+
+.top .steps.success .select {
+	background: var(--success-color);
+	color: white;
+}
+
+.top .steps.active h3 {
+	color: black;
+}
+
+/* ------------- */
+
+section>.middle {
+	margin-top: 3.2rem;
+
+}
+
+section>.middle label {
+	display: flex;
+	flex-direction: column;
+	gap: .4rem;
+
+	color: var(--gray-400);
+	font-weight: 700;
+}
+
+section>.middle input {
+	padding: 1.6rem 1.6rem;
+	border: 1px solid var(--gray-100);
+	margin-bottom: 1.6rem;
+}
+
+
+section>.bottom {
+	display: flex;
+	justify-content: end;
+}
+
+section>.bottom button {
+	padding: 1.6rem 3.2rem;
+
+	border: none;
+	outline: none;
+
+	background: var(--purple-mid);
+	color: white;
+
+	border-radius: .6rem;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.bottom button:hover {
+	background: var(--purple-light);
+	cursor: pointer;
+}
+
+/* Section empresa */
+
+.empresa {
+	display: none;
+}
+
+
+.empresa .bottom, 
+.projeto .bottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+.bottom > .back{
+	background: none;
+	color: var(--purple-mid);
+	border: 1px solid var(--purple-mid);
+}
+
+.bottom > .back:hover{
+	background: var(--purple-light);
+	color: white;
+	cursor: pointer;
+	
+}
+
+.projeto {
+	display: none;
+}
+
+textarea {
+	margin-bottom: 1.6rem;
+	border: 1px solid var(--gray-100);
+	padding: 1.6rem;
+	resize: none;
+
+	font-size: 1.6rem;
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	<title> #BoraCodar | Desafio 23 - Formulário </title>
+
+	<link rel="stylesheet" href="./style.css" />
+	<script src="./script.js" defer> </script>
+</head>
+	<body>
+    
+	<div id="card">
+
+	<section class="contato">
+
+	<div class="top">
+		<div class="steps active">
+			<div class="select">1</div>
+			<h3>Contato</h3>
+		</div>
+
+		<i class='bx bx-chevron-right'></i>
+
+		<div class="steps">
+			<div class="select">2</div>
+			<h3>Empresa</h3>
+    		</div>
+
+    		<i class='bx bx-chevron-right'></i>
+
+    		<div class="steps">
+      			<div class="select">3</div>
+      			<h3>Projeto</h3>
+    		</div>
+	</div>
+
+	<div class="middle">
+		<form>
+			<label>
+				Nome
+				<input type="text" name="nome" placeholder="Como prefere ser chamado">
+			</label>
+
+      			<label>
+				Telefone
+				<input type="phone" name="telefone" placeholder="Digite seu número de WhatsApp">
+			</label>
+
+			<label>
+				E-mail
+				<input type="email" name="email" placeholder="Digite seu e-mail">
+			</label>
+		</form>
+	</div>
+
+	<div class="bottom">
+		<button class="go-company">Continuar</button>
+	</div>
+
+	</section>
+
+	<section class="empresa">
+
+		<div class="top">
+
+		<div class="steps success">
+			<div class="select">1</div>
+			<h3>Contato</h3>
+		</div>
+
+		<i class='bx bx-chevron-right'></i>
+
+		<div class="steps active">
+			<div class="select">2</div>
+			<h3>Empresa</h3>
+    		</div>
+
+    		<i class='bx bx-chevron-right'></i>
+
+    		<div class="steps">
+      			<div class="select">3</div>
+      			<h3>Projeto</h3>
+    		</div>
+
+		</div>
+
+		<div class="middle">
+		<form>
+			<label>
+				Nome da Empresa
+				<input type="text" name="nome" placeholder="Qual é o nome da empresa">
+			</label>
+
+      			<label>
+				Número de funcionários
+				<input type="number" name="func" placeholder="Digite o número de colaboradores">
+			</label>
+
+			<label>
+				Sobre seu negócio
+				<textarea cols="65" rows="4" placeholder="Fale um pouco sobre seus produtos ou serviços"></textarea>
+			</label>
+
+			
+		</form>
+
+		</div>
+
+		<div class="bottom">
+			<button class="back"> Voltar </button>
+			<button class="go-project"> Continuar </button>
+		</div>
+
+	</section>
+
+	<section class="projeto">
+
+		<div class="top">
+
+		<div class="steps success">
+			<div class="select">1</div>
+			<h3>Contato</h3>
+		</div>
+
+		<i class='bx bx-chevron-right'></i>
+
+		<div class="steps success">
+			<div class="select">2</div>
+			<h3>Empresa</h3>
+    		</div>
+
+    		<i class='bx bx-chevron-right'></i>
+
+    		<div class="steps active">
+      			<div class="select">3</div>
+      			<h3>Projeto</h3>
+    		</div>
+
+		</div>
+
+		<div class="middle">
+		<form>
+
+			<label>
+				Objetivos do projeto
+				<textarea cols="65" rows="4" placeholder="Descreva quais os objetivos desse projeto"></textarea>
+			</label>
+			
+		</form>
+
+		</div>
+
+		<div class="bottom">
+			<button class="back"> Voltar </button>
+			<button class="go-end"> Enviar proposta </button>
+		</div>
+
+	</section>	
+
+	</div>
+	
+	</body>
+</html>
