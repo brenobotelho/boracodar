@@ -17,8 +17,8 @@ Acompanhe as postagens dos desafios no meu [Linkedin](https://br.linkedin.com/in
 |   #  |    Nome        | Code  | Deploy   |  |
 | :--- | :------------- | :---- | :--------| :------|
 | `06` | `Cartão de embarque` |  [✍](https://github.com/brenobotelho/boracodar/tree/main/desafio6) |[💻](https://brenobotelho.github.io/boracodar/desafio6/) | ![..](desafio6/print.png)
-| `07` | `Encontre os melhores blocos de carnaval` |  [✍](https://github.com/brenobotelho/boracodar/tree/main/desafio7) |[💻](https://brenobotelho.github.io/boracodar/desafio7/) |
-| `08` | `Dashboard` | [✍](https://github.com/brenobotelho/boracodar/tree/main/desafio8) |[💻](https://brenobotelho.github.io/boracodar/desafio8/) |
+| `07` | `Encontre os melhores blocos de carnaval` |  [✍](https://github.com/brenobotelho/boracodar/tree/main/desafio7) |[💻](https://brenobotelho.github.io/boracodar/desafio7/) | ![..](desafio7/print.png)
+| `08` | `Dashboard` | [✍](https://github.com/brenobotelho/boracodar/tree/main/desafio8) |[💻](https://brenobotelho.github.io/boracodar/desafio8/) | ![..](desafio8/print.png)
 | `09` | `Conversor de Moeda` | [✍](https://github.com/brenobotelho/boracodar/tree/main/desafio9) |[💻](https://brenobotelho.github.io/boracodar/desafio9/) |
 | `10` | `Página de Clima` | [✍](https://github.com/brenobotelho/boracodar/tree/main/desafio10) |[💻](https://brenobotelho.github.io/boracodar/desafio10/) |
 | `11` | `Página de Login` | [✍](https://github.com/brenobotelho/boracodar/tree/main/desafio11) |[💻](https://brenobotelho.github.io/boracodar/desafio11/) |
